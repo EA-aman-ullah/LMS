@@ -1,0 +1,9 @@
+2024-12-04T10:44:41.395Z [error]: unhandledRejection: Cannot create property 'Symbol(level)' on string 'Connected MongoDB.'
+TypeError: Cannot create property 'Symbol(level)' on string 'Connected MongoDB.'
+    at DerivedLogger.log (D:\Mosh-prectical\backend\LMS\node_modules\winston\lib\winston\logger.js:214:20)
+    at file:///D:/Mosh-prectical/backend/LMS/app/database/db.js:7:24
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Stack Trace: TypeError: Cannot create property 'Symbol(level)' on string 'Connected MongoDB.'
+    at DerivedLogger.log (D:\Mosh-prectical\backend\LMS\node_modules\winston\lib\winston\logger.js:214:20)
+    at file:///D:/Mosh-prectical/backend/LMS/app/database/db.js:7:24
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
