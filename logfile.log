@@ -7,3 +7,148 @@ Stack Trace: TypeError: Cannot create property 'Symbol(level)' on string 'Connec
     at DerivedLogger.log (D:\Mosh-prectical\backend\LMS\node_modules\winston\lib\winston\logger.js:214:20)
     at file:///D:/Mosh-prectical/backend/LMS/app/database/db.js:7:24
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-12-04T11:47:12.513Z [error]: somthing failed:
+Error: Error: somthing failed
+2024-12-06T10:28:44.441Z [error]: Cannot set headers after they are sent to the client:
+Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2024-12-06T10:28:56.586Z [error]: Cannot set headers after they are sent to the client:
+Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2024-12-06T10:33:17.261Z [error]: Cannot set headers after they are sent to the client:
+Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2024-12-06T11:08:33.621Z [error]: User validation failed: studentId: Path `studentId` is required.:
+Error: ValidationError: studentId: Path `studentId` is required.
+2024-12-06T11:16:40.892Z [error]: User validation failed: studentId: Path `studentId` is required.:
+Error: ValidationError: studentId: Path `studentId` is required.
+2024-12-06T11:17:16.738Z [error]: User validation failed: studentId: Path `studentId` is required.:
+Error: ValidationError: studentId: Path `studentId` is required.
+2024-12-06T11:24:55.771Z [error]: User validation failed: studentId: Path `studentId` is required.:
+Error: ValidationError: studentId: Path `studentId` is required.
+2024-12-06T11:29:41.439Z [error]: User validation failed: studentId: Path `studentId` is required.:
+Error: ValidationError: studentId: Path `studentId` is required.
+2024-12-06T11:32:29.202Z [error]: User validation failed: studentId: Path `studentId` (`async function generateId() {
+    const id = `${state.prefix}${state.year}${String(state.counter).padStart(
+      6,
+      "0"
+    )}`;
+    state.counter++;
+
+    // If counter exceeds 999999, reset and increment prefix
+    if (state.counter > 999999) {
+      state.counter = 1;
+      state.prefix = incrementPrefix(state.prefix);
+    }
+
+    // If prefix exceeds "ZZ", reset prefix and increment year
+    if (state.prefix === "ZZ" && state.counter === 1) {
+      state.prefix = "AA";
+      state.year++;
+    }
+
+    // Save updated state to DB
+    await state.save();
+    return id;
+  }`) is longer than the maximum allowed length (255).:
+Error: ValidationError: studentId: Path `studentId` (`async function generateId() {
+    const id = `${state.prefix}${state.year}${String(state.counter).padStart(
+      6,
+      "0"
+    )}`;
+    state.counter++;
+
+    // If counter exceeds 999999, reset and increment prefix
+    if (state.counter > 999999) {
+      state.counter = 1;
+      state.prefix = incrementPrefix(state.prefix);
+    }
+
+    // If prefix exceeds "ZZ", reset prefix and increment year
+    if (state.prefix === "ZZ" && state.counter === 1) {
+      state.prefix = "AA";
+      state.year++;
+    }
+
+    // Save updated state to DB
+    await state.save();
+    return id;
+  }`) is longer than the maximum allowed length (255).
+2024-12-06T11:33:19.549Z [error]: User validation failed: studentId: Path `studentId` (`async function generateId() {
+    const id = `${state.prefix}${state.year}${String(state.counter).padStart(
+      6,
+      "0"
+    )}`;
+    state.counter++;
+
+    // If counter exceeds 999999, reset and increment prefix
+    if (state.counter > 999999) {
+      state.counter = 1;
+      state.prefix = incrementPrefix(state.prefix);
+    }
+
+    // If prefix exceeds "ZZ", reset prefix and increment year
+    if (state.prefix === "ZZ" && state.counter === 1) {
+      state.prefix = "AA";
+      state.year++;
+    }
+
+    // Save updated state to DB
+    await state.save();
+    return id;
+  }`) is longer than the maximum allowed length (255).:
+Error: ValidationError: studentId: Path `studentId` (`async function generateId() {
+    const id = `${state.prefix}${state.year}${String(state.counter).padStart(
+      6,
+      "0"
+    )}`;
+    state.counter++;
+
+    // If counter exceeds 999999, reset and increment prefix
+    if (state.counter > 999999) {
+      state.counter = 1;
+      state.prefix = incrementPrefix(state.prefix);
+    }
+
+    // If prefix exceeds "ZZ", reset prefix and increment year
+    if (state.prefix === "ZZ" && state.counter === 1) {
+      state.prefix = "AA";
+      state.year++;
+    }
+
+    // Save updated state to DB
+    await state.save();
+    return id;
+  }`) is longer than the maximum allowed length (255).
+2024-12-06T11:33:46.467Z [error]: unhandledRejection: Can't save() the same doc multiple times in parallel. Document: idState
+ParallelSaveError: Can't save() the same doc multiple times in parallel. Document: idState
+    at model.save (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\model.js:557:20)
+    at generateId (file:///D:/Mosh-prectical/backend/LMS/app/utils/generateId.js:65:17)
+    at model.<anonymous> (file:///D:/Mosh-prectical/backend/LMS/app/models/user.js:53:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Stack Trace: ParallelSaveError: Can't save() the same doc multiple times in parallel. Document: idState
+    at model.save (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\model.js:557:20)
+    at generateId (file:///D:/Mosh-prectical/backend/LMS/app/utils/generateId.js:65:17)
+    at model.<anonymous> (file:///D:/Mosh-prectical/backend/LMS/app/models/user.js:53:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-12-06T11:33:46.483Z [error]: User validation failed: studentId: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "studentId":
+Error: ValidationError: studentId: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "studentId"
+2024-12-06T11:35:34.412Z [error]: Can't save() the same doc multiple times in parallel. Document: idState:
+Error: ParallelSaveError: Can't save() the same doc multiple times in parallel. Document: idState
+2024-12-06T11:36:20.343Z [error]: user.generateAuthToken is not a function:
+Error: TypeError: user.generateAuthToken is not a function
+2024-12-06T11:40:25.450Z [error]: user.generateAuthToken is not a function:
+Error: TypeError: user.generateAuthToken is not a function
+2024-12-06T11:42:43.865Z [error]: user.generateAuthToken is not a function:
+Error: TypeError: user.generateAuthToken is not a function
+2024-12-06T11:43:45.634Z [error]: config is not defined:
+Error: ReferenceError: config is not defined
+2024-12-06T12:36:34.994Z [error]: Expected double-quoted property name in JSON at position 76:
+Error: SyntaxError: Expected double-quoted property name in JSON at position 76
+2024-12-06T12:59:05.886Z [error]: validateBook is not defined:
+Error: ReferenceError: validateBook is not defined
+2024-12-06T13:00:37.182Z [error]: Joi.objectId(...).requried is not a function:
+Error: TypeError: Joi.objectId(...).requried is not a function
+2024-12-06T13:05:48.988Z [error]: Joi.objectId(...).requried is not a function:
+Error: TypeError: Joi.objectId(...).requried is not a function
+2024-12-06T13:06:45.697Z [error]: Joi.objectId(...).requried is not a function:
+Error: TypeError: Joi.objectId(...).requried is not a function
+2024-12-06T13:12:56.005Z [error]: Joi.objectId(...).requrired is not a function:
+Error: TypeError: Joi.objectId(...).requrired is not a function

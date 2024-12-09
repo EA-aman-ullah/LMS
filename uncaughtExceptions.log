@@ -1,0 +1,243 @@
+2024-12-04T11:18:43.424Z [error]: uncaughtException: Cannot read properties of undefined (reading 'use')
+TypeError: Cannot read properties of undefined (reading 'use')
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:6:7)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: Cannot read properties of undefined (reading 'use')
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:6:7)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T11:20:18.282Z [error]: uncaughtException: Cannot read properties of undefined (reading 'message')
+TypeError: Cannot read properties of undefined (reading 'message')
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/middleware/error.js:4:25)
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:8:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: Cannot read properties of undefined (reading 'message')
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/middleware/error.js:4:25)
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:8:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T11:22:03.641Z [error]: uncaughtException: Cannot read properties of undefined (reading 'message')
+TypeError: Cannot read properties of undefined (reading 'message')
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/middleware/error.js:4:23)
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:8:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: Cannot read properties of undefined (reading 'message')
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/middleware/error.js:4:23)
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:8:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-04T11:22:41.441Z [error]: uncaughtException: Cannot read properties of undefined (reading 'message')
+TypeError: Cannot read properties of undefined (reading 'message')
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/middleware/error.js:4:25)
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:8:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: Cannot read properties of undefined (reading 'message')
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/middleware/error.js:4:25)
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:8:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:9:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-05T13:02:04.382Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/utils/config.js:5:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/utils/config.js:5:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-05T13:03:20.294Z [error]: uncaughtException: joi is not defined
+ReferenceError: joi is not defined
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/utils/validation.js:5:3)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:12:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: ReferenceError: joi is not defined
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/utils/validation.js:5:3)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:12:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T05:36:52.649Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/utils/config.js:5:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/utils/config.js:5:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T05:58:10.936Z [error]: uncaughtException: app.usr is not a function
+TypeError: app.usr is not a function
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:9:7)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:13:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: app.usr is not a function
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:9:7)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:13:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T05:58:45.030Z [error]: uncaughtException: app.usr is not a function
+TypeError: app.usr is not a function
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:9:7)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:13:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: app.usr is not a function
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:9:7)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:13:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T06:01:09.881Z [error]: uncaughtException: Invalid schema configuration: `true` is not a valid type at path `required`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+TypeError: Invalid schema configuration: `true` is not a valid type at path `required`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.add (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:740:13)
+    at new Schema (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:143:10)
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/borrowBook.js:12:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: Invalid schema configuration: `true` is not a valid type at path `required`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.add (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:740:13)
+    at new Schema (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:143:10)
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/borrowBook.js:12:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T06:03:48.833Z [error]: uncaughtException: Invalid schema configuration: `true` is not a valid type at path `required`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+TypeError: Invalid schema configuration: `true` is not a valid type at path `required`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.add (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:740:13)
+    at new Schema (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:143:10)
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/borrowBook.js:12:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: Invalid schema configuration: `true` is not a valid type at path `required`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.add (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:740:13)
+    at new Schema (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:143:10)
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/borrowBook.js:12:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T06:04:34.766Z [error]: uncaughtException: Invalid schema configuration: `true` is not a valid type at path `required`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+TypeError: Invalid schema configuration: `true` is not a valid type at path `required`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.add (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:740:13)
+    at new Schema (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:143:10)
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/borrowBook.js:33:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: Invalid schema configuration: `true` is not a valid type at path `required`. See https://bit.ly/mongoose-schematypes for a list of valid schema types.
+    at Schema.add (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:740:13)
+    at new Schema (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\schema.js:143:10)
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/borrowBook.js:33:11
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T06:04:54.044Z [error]: uncaughtException: app.usr is not a function
+TypeError: app.usr is not a function
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:11:7)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:13:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: app.usr is not a function
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/routes/router.js:11:7)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:13:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T07:35:54.549Z [error]: uncaughtException: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\Mosh-prectical\backend\LMS\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\Mosh-prectical\backend\LMS\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///D:/Mosh-prectical/backend/LMS/app/utils/generateId.js:1:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: ReferenceError: require is not defined in ES module scope, you can use import instead
+This file is being treated as an ES module because it has a '.js' file extension and 'D:\Mosh-prectical\backend\LMS\package.json' contains "type": "module". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+    at file:///D:/Mosh-prectical/backend/LMS/app/utils/generateId.js:1:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T07:54:27.216Z [error]: uncaughtException: userSchema is not defined
+ReferenceError: userSchema is not defined
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/borrowBook.js:67:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: ReferenceError: userSchema is not defined
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/borrowBook.js:67:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T07:55:55.469Z [error]: uncaughtException: bookSchemaSchema is not defined
+ReferenceError: bookSchemaSchema is not defined
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/book.js:34:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: ReferenceError: bookSchemaSchema is not defined
+    at file:///D:/Mosh-prectical/backend/LMS/app/models/book.js:34:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-06T18:32:54.934Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/utils/config.js:5:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/Mosh-prectical/backend/LMS/app/utils/config.js:5:11)
+    at file:///D:/Mosh-prectical/backend/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-09T04:41:14.940Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)

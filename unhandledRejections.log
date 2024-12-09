@@ -7,3 +7,14 @@ Stack Trace: TypeError: Cannot create property 'Symbol(level)' on string 'Connec
     at DerivedLogger.log (D:\Mosh-prectical\backend\LMS\node_modules\winston\lib\winston\logger.js:214:20)
     at file:///D:/Mosh-prectical/backend/LMS/app/database/db.js:7:24
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-12-06T11:33:46.467Z [error]: unhandledRejection: Can't save() the same doc multiple times in parallel. Document: idState
+ParallelSaveError: Can't save() the same doc multiple times in parallel. Document: idState
+    at model.save (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\model.js:557:20)
+    at generateId (file:///D:/Mosh-prectical/backend/LMS/app/utils/generateId.js:65:17)
+    at model.<anonymous> (file:///D:/Mosh-prectical/backend/LMS/app/models/user.js:53:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Stack Trace: ParallelSaveError: Can't save() the same doc multiple times in parallel. Document: idState
+    at model.save (D:\Mosh-prectical\backend\LMS\node_modules\mongoose\lib\model.js:557:20)
+    at generateId (file:///D:/Mosh-prectical/backend/LMS/app/utils/generateId.js:65:17)
+    at model.<anonymous> (file:///D:/Mosh-prectical/backend/LMS/app/models/user.js:53:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
