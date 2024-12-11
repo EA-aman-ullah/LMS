@@ -241,3 +241,313 @@ Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
     at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
     at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-09T04:44:41.626Z [error]: uncaughtException: Configuration property "jwtPrivateKey" is not defined
+Error: Configuration property "jwtPrivateKey" is not defined
+    at Config.get (D:\OptimaGeeks\LMS\node_modules\config\lib\config.js:181:11)
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:4:15)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: Configuration property "jwtPrivateKey" is not defined
+    at Config.get (D:\OptimaGeeks\LMS\node_modules\config\lib\config.js:181:11)
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:4:15)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-09T04:45:53.255Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-10T04:53:34.257Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-10T09:43:16.110Z [error]: uncaughtException: file.test is not a function
+TypeError: file.test is not a function
+    at fileFilter (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:24:26)
+    at wrappedFileFilter (D:\OptimaGeeks\LMS\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at HeaderParser.cb (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (D:\OptimaGeeks\LMS\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (D:\OptimaGeeks\LMS\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:567:19)
+Stack Trace: TypeError: file.test is not a function
+    at fileFilter (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:24:26)
+    at wrappedFileFilter (D:\OptimaGeeks\LMS\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at HeaderParser.cb (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (D:\OptimaGeeks\LMS\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (D:\OptimaGeeks\LMS\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:567:19)
+2024-12-10T09:44:52.210Z [error]: uncaughtException: Date.new is not a function
+TypeError: Date.new is not a function
+    at DiskStorage.filename [as getFilename] (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:11:28)
+    at D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:34:10
+    at DiskStorage.destination [as getDestination] (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:8:5)
+    at DiskStorage._handleFile (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:31:8)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:137:17
+    at fileFilter (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:27:7)
+    at wrappedFileFilter (D:\OptimaGeeks\LMS\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at HeaderParser.cb (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:358:14)
+Stack Trace: TypeError: Date.new is not a function
+    at DiskStorage.filename [as getFilename] (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:11:28)
+    at D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:34:10
+    at DiskStorage.destination [as getDestination] (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:8:5)
+    at DiskStorage._handleFile (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:31:8)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:137:17
+    at fileFilter (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:27:7)
+    at wrappedFileFilter (D:\OptimaGeeks\LMS\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at HeaderParser.cb (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:358:14)
+2024-12-10T09:56:18.583Z [error]: uncaughtException: Cannot read properties of undefined (reading 'storage')
+TypeError: Cannot read properties of undefined (reading 'storage')
+    at fileFilter (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:20:22)
+    at wrappedFileFilter (D:\OptimaGeeks\LMS\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at HeaderParser.cb (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (D:\OptimaGeeks\LMS\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (D:\OptimaGeeks\LMS\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:567:19)
+Stack Trace: TypeError: Cannot read properties of undefined (reading 'storage')
+    at fileFilter (file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:20:22)
+    at wrappedFileFilter (D:\OptimaGeeks\LMS\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at HeaderParser.cb (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (D:\OptimaGeeks\LMS\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (D:\OptimaGeeks\LMS\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (D:\OptimaGeeks\LMS\node_modules\busboy\lib\types\multipart.js:567:19)
+2024-12-10T10:05:02.170Z [error]: uncaughtException: fileURLToPath is not defined
+ReferenceError: fileURLToPath is not defined
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:4:24
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: ReferenceError: fileURLToPath is not defined
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:4:24
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-10T10:15:47.661Z [error]: uncaughtException: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:1160:12)
+    at ServerResponse.json (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:271:14)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:46:9
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+Stack Trace: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:1160:12)
+    at ServerResponse.json (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:271:14)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:46:9
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+2024-12-10T10:16:31.035Z [error]: uncaughtException: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:1160:12)
+    at ServerResponse.json (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:271:14)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:46:9
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+Stack Trace: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:1160:12)
+    at ServerResponse.json (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:271:14)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:46:9
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+2024-12-10T10:17:17.258Z [error]: uncaughtException: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:1160:12)
+    at ServerResponse.json (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:271:14)
+    at ServerResponse.send (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:162:21)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:46:9
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+Stack Trace: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:1160:12)
+    at ServerResponse.json (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:271:14)
+    at ServerResponse.send (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:162:21)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:46:9
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+2024-12-10T10:36:41.216Z [error]: uncaughtException: book is not defined
+ReferenceError: book is not defined
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:41:61
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+    at node:internal/streams/writable:934:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Stack Trace: ReferenceError: book is not defined
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:41:61
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+    at node:internal/streams/writable:934:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-12-10T13:13:11.853Z [error]: uncaughtException: ENOENT: no such file or directory, unlink 'D:\OptimaGeeks\LMS\public\1733836391808-0.9866704069670167.JPG'
+Error: ENOENT: no such file or directory, unlink 'D:\OptimaGeeks\LMS\public\1733836391808-0.9866704069670167.JPG'
+    at Object.unlinkSync (node:fs:1885:11)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:61:14
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+    at node:internal/streams/writable:934:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Stack Trace: Error: ENOENT: no such file or directory, unlink 'D:\OptimaGeeks\LMS\public\1733836391808-0.9866704069670167.JPG'
+    at Object.unlinkSync (node:fs:1885:11)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:61:14
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+    at node:internal/streams/writable:934:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+2024-12-10T13:18:00.682Z [error]: uncaughtException: Invalid status code: Invalid imageURL
+RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Invalid imageURL
+    at ServerResponse.writeHead (node:_http_server:351:11)
+    at ServerResponse._implicitHeader (node:_http_server:337:8)
+    at write_ (node:_http_outgoing:941:9)
+    at ServerResponse.end (node:_http_outgoing:1052:5)
+    at ServerResponse.send (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:278:15)
+    at ServerResponse.send (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:162:21)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:61:34
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+Stack Trace: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: Invalid imageURL
+    at ServerResponse.writeHead (node:_http_server:351:11)
+    at ServerResponse._implicitHeader (node:_http_server:337:8)
+    at write_ (node:_http_outgoing:941:9)
+    at ServerResponse.end (node:_http_outgoing:1052:5)
+    at ServerResponse.send (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:232:10)
+    at ServerResponse.json (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:278:15)
+    at ServerResponse.send (D:\OptimaGeeks\LMS\node_modules\express\lib\response.js:162:21)
+    at file:///D:/OptimaGeeks/LMS/app/middleware/multerCofing.js:61:34
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+2024-12-11T04:41:41.516Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2024-12-11T11:53:28.673Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)

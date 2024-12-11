@@ -8,6 +8,7 @@ import {
 import auth from "../middleware/auth.js";
 import admin from "../middleware/admin.js";
 import managment from "../middleware/managment.js";
+import handleImage from "../middleware/multerCofing.js";
 
 const books = express.Router();
 
@@ -21,12 +22,12 @@ books.get("/:id", async (req, res) => {
   res.send(book);
 });
 
-books.post("/", [auth, managment], async (req, res) => {
+books.post("/", [auth, managment], handleImage, async (req, res) => {
   const { status, body } = await createBook(req);
   res.status(status).send(body);
 });
 
-books.put("/:id", [auth, managment], async (req, res) => {
+books.put("/:id", [auth, managment], handleImage, async (req, res) => {
   const { status, body } = await updateBook(req);
   res.status(status).send(body);
 });

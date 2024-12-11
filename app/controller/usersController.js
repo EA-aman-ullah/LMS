@@ -31,7 +31,9 @@ export async function createUser(req) {
   const salt = await bcrypt.genSalt(10);
   req.body.password = await bcrypt.hash(req.body.password, salt);
 
-  user = new User(_.pick(req.body, ["name", "email", "password", "phone"]));
+  user = new User(
+    _.pick(req.body, ["name", "email", "password", "phone", "imageURL"])
+  );
   user = await user.save();
 
   const token = user.generateAuthToken();
@@ -39,7 +41,7 @@ export async function createUser(req) {
   return {
     status: 201,
     header: token,
-    body: _.pick(user, ["_id", "name", "email"]),
+    body: _.pick(user, ["_id", "name", "email", "phone", "imageURL"]),
   };
 }
 

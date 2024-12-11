@@ -152,3 +152,39 @@ Error: TypeError: Joi.objectId(...).requried is not a function
 Error: TypeError: Joi.objectId(...).requried is not a function
 2024-12-06T13:12:56.005Z [error]: Joi.objectId(...).requrired is not a function:
 Error: TypeError: Joi.objectId(...).requrired is not a function
+2024-12-10T09:09:47.870Z [error]: __dirname is not defined:
+Error: ReferenceError: __dirname is not defined
+2024-12-10T09:10:36.585Z [error]: _dirname is not defined:
+Error: ReferenceError: _dirname is not defined
+2024-12-10T09:11:33.356Z [error]: __dirname is not defined:
+Error: ReferenceError: __dirname is not defined
+2024-12-10T09:14:54.808Z [error]: _dirname is not defined:
+Error: ReferenceError: _dirname is not defined
+2024-12-10T09:15:11.119Z [error]: _dirname is not defined:
+Error: ReferenceError: _dirname is not defined
+2024-12-10T09:16:56.706Z [error]: _dirname is not defined:
+Error: ReferenceError: _dirname is not defined
+2024-12-10T09:17:21.783Z [error]: Cannot read properties of undefined (reading 'filename'):
+Error: TypeError: Cannot read properties of undefined (reading 'filename')
+2024-12-10T09:18:53.880Z [error]: Cannot read properties of undefined (reading 'filename'):
+Error: TypeError: Cannot read properties of undefined (reading 'filename')
+2024-12-10T09:22:08.240Z [error]: Cannot read properties of undefined (reading 'filename'):
+Error: TypeError: Cannot read properties of undefined (reading 'filename')
+2024-12-10T09:22:49.072Z [error]: Cannot read properties of undefined (reading 'filename'):
+Error: TypeError: Cannot read properties of undefined (reading 'filename')
+2024-12-10T09:23:10.402Z [error]: Cannot read properties of undefined (reading 'filename'):
+Error: TypeError: Cannot read properties of undefined (reading 'filename')
+2024-12-10T09:28:35.484Z [error]: Cannot read properties of undefined (reading 'filename'):
+Error: TypeError: Cannot read properties of undefined (reading 'filename')
+2024-12-10T09:29:08.473Z [error]: Cannot read properties of undefined (reading 'filename'):
+Error: TypeError: Cannot read properties of undefined (reading 'filename')
+2024-12-10T09:29:25.129Z [error]: Cannot read properties of undefined (reading 'filename'):
+Error: TypeError: Cannot read properties of undefined (reading 'filename')
+2024-12-10T09:29:53.476Z [error]: Cannot read properties of undefined (reading 'filename'):
+Error: TypeError: Cannot read properties of undefined (reading 'filename')
+2024-12-10T10:12:18.500Z [error]: Cannot set headers after they are sent to the client:
+Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2024-12-10T10:20:11.409Z [error]: book validation failed: autherName: Path `autherName` (`xyz`) is shorter than the minimum allowed length (5).:
+Error: ValidationError: autherName: Path `autherName` (`xyz`) is shorter than the minimum allowed length (5).
+2024-12-10T12:45:39.542Z [error]: Cannot set headers after they are sent to the client:
+Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client

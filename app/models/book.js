@@ -25,6 +25,18 @@ export const bookSchema = new mongoose.Schema({
     type: Number,
     minlength: 0,
   },
+  reservedNumber: {
+    type: Number,
+    minlength: 0,
+  },
+  imageURL: {
+    type: String,
+    required: true,
+  },
+  dateAdd: {
+    type: Date,
+    default: Date.now(),
+  },
 });
 
 const Book = mongoose.model("book", bookSchema);
@@ -32,7 +44,8 @@ const Book = mongoose.model("book", bookSchema);
 export function validateBook(book) {
   const schema = {
     name: Joi.string().min(3).max(50).required(),
-    autherName: Joi.string().max(255).required(),
+    autherName: Joi.string().min(5).max(255).required(),
+    imageURL: Joi.string(),
     numberInStock: Joi.number().min(0),
   };
 

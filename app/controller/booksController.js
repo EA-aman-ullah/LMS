@@ -2,8 +2,15 @@ import Book, { validateBook } from "../models/book.js";
 import _ from "lodash";
 
 export async function getBooks(id) {
-  if (id) return await Book.findById(id).sort("name");
-  else return await Book.find().sort("name");
+  if (id) {
+    const book = await Book.findById(id).sort("name");
+    if (!book)
+      return { status: 404, body: "Book with the given Id was not found" };
+    return { status: 200, body: book };
+  } else {
+    const books = await Book.find().sort("name");
+    return { status: 200, body: books };
+  }
 }
 
 export async function createBook(req) {
@@ -11,7 +18,7 @@ export async function createBook(req) {
   if (error) return { status: 400, body: error.details[0].message };
 
   let book = new Book(
-    _.pick(req.body, ["name", "autherName", "numberInStock"])
+    _.pick(req.body, ["name", "autherName", "numberInStock", "imageURL"])
   );
   book = await book.save();
 
@@ -24,7 +31,7 @@ export async function updateBook(req) {
 
   let book = await Book.findByIdAndUpdate(
     req.params.id,
-    _.pick(req.body, ["name", "autherName", "numberInStock"]),
+    _.pick(req.body, ["name", "autherName", "numberInStock", "imageURL"]),
     { new: true }
   );
 

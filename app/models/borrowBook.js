@@ -16,6 +16,10 @@ export const borrowSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 255,
       },
+      imageURL: {
+        type: String,
+        required: true,
+      },
     }),
     required: true,
   },
@@ -33,8 +37,17 @@ export const borrowSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 255,
       },
+      imageURL: {
+        type: String,
+        required: true,
+      },
     }),
     required: true,
+  },
+
+  isNotReturned: {
+    type: Boolean,
+    default: true,
   },
   dateOut: {
     type: Date,

@@ -40,11 +40,20 @@ export const userSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
+  requestBorrows: {
+    type: Number,
+    default: 0,
+    required: true
+  },
   role: {
     type: String,
     enum: ["admin", "librarian", "student"],
     required: true,
     default: "student",
+  },
+  imageURL: {
+    type: String,
+    required: true,
   },
 });
 
@@ -77,6 +86,7 @@ export function validateUser(user) {
     email: Joi.string().max(255).required().email(),
     phone: Joi.string().min(3).max(50).required(),
     password: Joi.string().min(5).max(50).required(),
+    imageURL: Joi.string().required(),
   };
 
   return Joi.object(schema).validate(user);
