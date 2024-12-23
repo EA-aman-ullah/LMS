@@ -3,6 +3,7 @@ import {
   createRequestBorrow,
   deleteRequestBorrow,
   getRequestBorrows,
+  getRequestExist,
   updeteRequestBorrow,
 } from "../controller/requestborrowsController.js";
 import auth from "../middleware/auth.js";
@@ -12,8 +13,13 @@ import admin from "../middleware/admin.js";
 const requestBorrows = express.Router();
 
 requestBorrows.get("/", auth, async (req, res) => {
-  const { requestBorrows } = await getRequestBorrows();
-  res.send(requestBorrows);
+  if (!req.query.bookId) {
+    const { status, body } = await getRequestBorrows(req);
+    res.status(status).send(body);
+  } else {
+    const request = await getRequestExist(req);
+    res.send(request);
+  }
 });
 
 requestBorrows.get("/:id", auth, async (req, res) => {

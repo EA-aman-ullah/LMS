@@ -16,6 +16,12 @@ export const borrowSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 255,
       },
+      studentId: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 255,
+      },
       imageURL: {
         type: String,
         required: true,
@@ -37,6 +43,12 @@ export const borrowSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 255,
       },
+      bookId: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 255,
+      },
       imageURL: {
         type: String,
         required: true,
@@ -45,24 +57,19 @@ export const borrowSchema = new mongoose.Schema({
     required: true,
   },
 
-  isNotReturned: {
-    type: Boolean,
-    default: true,
-  },
-  dateOut: {
-    type: Date,
-    required: true,
-    default: Date.now(),
-  },
-  datedue: {
-    type: Date,
-    required: true,
-    default: function () {
-      const currentDate = new Date();
-      currentDate.setDate(currentDate.getDate() + 10);
-      return currentDate;
-    },
-  },
+  isNotReturned: { type: Boolean, default: true },
+  isAssigned: { type: Boolean, default: false },
+  dateOut: { type: Date },
+  datedue: { type: Date },
+  //  {
+  //   type: Date,
+  //   required: true,
+  //   default: function () {
+  //     const currentDate = new Date();
+  //     currentDate.setDate(currentDate.getDate() + 10);
+  //     return currentDate;
+  //   },
+  // },
 });
 
 const BorrowBook = mongoose.model("BorrowBook", borrowSchema);

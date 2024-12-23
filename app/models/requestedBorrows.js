@@ -16,6 +16,12 @@ export const requestedBorrowsSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 255,
       },
+      studentId: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 255,
+      },
       imageURL: {
         type: String,
         required: true,
@@ -37,6 +43,12 @@ export const requestedBorrowsSchema = new mongoose.Schema({
         minlength: 3,
         maxlength: 255,
       },
+      bookId: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 255,
+      },
       imageURL: {
         type: String,
         required: true,
@@ -51,13 +63,12 @@ export const requestedBorrowsSchema = new mongoose.Schema({
 });
 
 const RequestBorrows = mongoose.model(
-  "requestedBorrows",
+  "requestedborrows",
   requestedBorrowsSchema
 );
 
 export function validateRequestBorrow(borrowBooks) {
   const schema = {
-    studentId: Joi.objectId().required(),
     bookId: Joi.objectId().required(),
   };
 

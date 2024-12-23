@@ -2,6 +2,7 @@ import Joi from "joi";
 import jwt from "jsonwebtoken";
 import config from "config";
 import mongoose from "mongoose";
+import admin from "../middleware/admin.js";
 
 export const userSchema = new mongoose.Schema({
   name: {
@@ -43,17 +44,17 @@ export const userSchema = new mongoose.Schema({
   requestBorrows: {
     type: Number,
     default: 0,
-    required: true
+    required: true,
   },
   role: {
     type: String,
-    enum: ["admin", "librarian", "student"],
+    admin: ["admin", "librarian", "student"],
     required: true,
     default: "student",
   },
   imageURL: {
     type: String,
-    required: true,
+    // required: true,
   },
 });
 
@@ -61,7 +62,7 @@ userSchema.pre("validate", async function (next) {
   if (!this.studentId) {
     try {
       const { default: generateId } = await import("../utils/generateId.js");
-      this.studentId = await generateId();
+      this.studentId = await generateId("STD");
     } catch (error) {
       console.error("Error generating ID:", error);
       next(error);
@@ -78,6 +79,7 @@ userSchema.methods.generateAuthToken = function () {
   );
   return token;
 };
+
 const User = mongoose.model("User", userSchema);
 
 export function validateUser(user) {
@@ -86,7 +88,7 @@ export function validateUser(user) {
     email: Joi.string().max(255).required().email(),
     phone: Joi.string().min(3).max(50).required(),
     password: Joi.string().min(5).max(50).required(),
-    imageURL: Joi.string().required(),
+    imageURL: Joi.string(),
   };
 
   return Joi.object(schema).validate(user);

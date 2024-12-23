@@ -14,32 +14,38 @@ export async function getRequestBorrows(req) {
     if (!requestBorrow)
       return {
         status: 404,
-        body: "The Requested Borrows with the given it was not found",
+        body: "The Requested Borrows with the given id was not found",
       };
     if (req.user.role === "student") {
       if (requestBorrow.student._id === req.user._id)
-        return { status: 200, body: borrow };
+        return { status: 200, body: requestBorrow };
       else return { status: 400, body: "This request was not made by You" };
     } else return { status: 200, body: requestBorrow };
   } else {
     if (req.user.role !== "student") {
-      const requestBorrow = await RequestBorrows.find({ isApproved: false });
+      const requestBorrow = await RequestBorrows.find();
       return { status: 200, body: requestBorrow };
     } else {
       const requestBorrow = await RequestBorrows.find({
         "student._id": req.user._id,
-        isApproved: false,
       });
       return { status: 200, body: requestBorrow };
     }
   }
 }
 
+export async function getRequestExist(req) {
+  return await RequestBorrows.findOne({
+    "book._id": req.query.bookId,
+    "student._id": req.user._id,
+  });
+}
+
 export async function createRequestBorrow(req) {
   const { error } = validateRequestBorrow(req.body);
   if (error) return { status: 400, body: error.details[0].message };
 
-  const student = await User.findById(req.body.studentId);
+  const student = await User.findById(req.user._id);
   if (!student) return { status: 404, body: "Invalid Student" };
 
   const book = await Book.findById(req.body.bookId);
@@ -48,12 +54,18 @@ export async function createRequestBorrow(req) {
   if (book.numberInStock === 0)
     return { status: 400, body: "Book not in Stock" };
 
-  const requestBorrowsExist = await BorrowBook.findOne({
-    "student._id": req.body.studentId,
+  const BorrowsExist = await BorrowBook.findOne({
+    "student._id": req.user._id,
     "book._id": req.body.bookId,
   });
-  if (requestBorrowsExist)
-    return { status: 400, body: "This book Already requested By this Student" };
+
+  const requestBorrowsExist = await RequestBorrows.findOne({
+    "student._id": req.user._id,
+    "book._id": req.body.bookId,
+  });
+
+  if (BorrowsExist || requestBorrowsExist)
+    return { status: 422, body: "This book Already requested By this Student" };
 
   let borrowQuantity = await RequestBorrows.countDocuments({
     "student._id": req.body.studentId,
@@ -61,9 +73,9 @@ export async function createRequestBorrow(req) {
   if (borrowQuantity > 5)
     return { status: 400, body: "The limit has been completed" };
 
-  let requestBorrowBook = new BorrowBook({
-    student: _.pick(student, ["_id", "name", "phone", "imageURL"]),
-    book: _.pick(book, ["_id", "name", "autherName", "imageURL"]),
+  let requestBorrowBook = new RequestBorrows({
+    student: _.pick(student, ["_id", "name", "phone", "imageURL", "studentId"]),
+    book: _.pick(book, ["_id", "name", "autherName", "imageURL", "bookId"]),
   });
 
   const session = await mongoose.startSession();
@@ -101,22 +113,25 @@ export async function updeteRequestBorrow(id) {
   const book = await Book.findById(requestBorrow.book._id);
   const student = await User.findById(requestBorrow.student._id);
 
-  if (!book || !student || student.requestBorrows < 1)
+  if (!book || !student)
     return {
       status: 400,
-      body: "Related Student or Book does not Exist or This student does not applied any request",
+      body: "Related Student or Book does not Exist",
     };
 
-  let borrowBook = new BorrowBook(_.pick(requestBorrow, ["student", "book"]));
+  let borrowBook = new BorrowBook({
+    student: _.pick(student, ["_id", "name", "phone", "imageURL", "studentId"]),
+    book: _.pick(book, ["_id", "name", "autherName", "imageURL", "bookId"]),
+  });
 
   const session = await mongoose.startSession();
   session.startTransaction();
 
   try {
-    requestBorrow.isApproved === true;
-    let result = await requestBorrow.seve({ session });
+    requestBorrow.isApproved = true;
+    let result = await requestBorrow.save({ session });
 
-    await borrowBook.seve({ session });
+    await borrowBook.save({ session });
 
     book.reservedNumber--;
     book.returnableBooks++;

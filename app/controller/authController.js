@@ -14,7 +14,7 @@ export async function getToken(req) {
 
   const token = user.generateAuthToken();
 
-  return { status: 200, body: token };
+  return { status: 200, header: token, body: user };
 }
 
 function validateUser(user) {

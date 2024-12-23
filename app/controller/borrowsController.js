@@ -66,6 +66,22 @@ export async function updateBorrow(req) {
   }
 }
 
+export async function assingedBorrow(id) {
+  const borrowBook = await BorrowBook.findByIdAndUpdate(
+    id,
+    {
+      isAssigned: true,
+      dateOut: Date.now(),
+      datedue: new Date(new Date().setDate(new Date().getDate() + 10)),
+    },
+    { new: true }
+  );
+
+  if (!borrowBook)
+    return { status: 404, body: "The Borrow with given id was not found!" };
+  return { status: 201, body: borrowBook };
+}
+
 // export async function deletBorrow(id) {
 //   const session = await mongoose.startSession();
 //   session.startTransaction();

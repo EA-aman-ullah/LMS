@@ -15,19 +15,33 @@ export const bookSchema = new mongoose.Schema({
     minlength: 5,
     maxlength: 50,
   },
+  bookId: {
+    type: String,
+    required: true,
+    minlength: 5,
+    maxlength: 255,
+  },
+  location: {
+    type: String,
+    required: true,
+    minlength: 4,
+    maxlength: 255,
+  },
   numberInStock: {
     type: Number,
     required: true,
     default: 0,
-    minlength: 0,
+    min: 0,
   },
   returnableBooks: {
     type: Number,
-    minlength: 0,
+    default: 0,
+    min: 0,
   },
   reservedNumber: {
     type: Number,
-    minlength: 0,
+    default: 0,
+    min: 0,
   },
   imageURL: {
     type: String,
@@ -39,14 +53,29 @@ export const bookSchema = new mongoose.Schema({
   },
 });
 
+bookSchema.pre("validate", async function (next) {
+  if (!this.bookId) {
+    try {
+      const { default: generateId } = await import("../utils/generateId.js");
+      this.bookId = await generateId("BKD");
+    } catch (error) {
+      console.error("Error generating ID:", error);
+      next(error);
+      return;
+    }
+  }
+  next();
+});
+
 const Book = mongoose.model("book", bookSchema);
 
 export function validateBook(book) {
   const schema = {
     name: Joi.string().min(3).max(50).required(),
     autherName: Joi.string().min(5).max(255).required(),
-    imageURL: Joi.string(),
+    imageURL: Joi.string().required(),
     numberInStock: Joi.number().min(0),
+    location: Joi.string().min(4).max(255).required(),
   };
 
   return Joi.object(schema).validate(book);

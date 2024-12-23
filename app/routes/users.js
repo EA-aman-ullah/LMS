@@ -6,6 +6,7 @@ import {
 } from "../controller/usersController.js";
 import auth from "../middleware/auth.js";
 import managment from "../middleware/managment.js";
+import handleImage from "../middleware/multerCofing.js";
 
 const users = express.Router();
 
@@ -23,9 +24,9 @@ users.get("/students/:id", [auth, managment], async (req, res) => {
   res.status(status).send(body);
 });
 
-users.post("/", async (req, res) => {
-  const { status, header, body } = await createUser(req);
-  res.status(status).header("x-auth-token", header).send(body);
+users.post("/", handleImage, async (req, res) => {
+  const { status, header: token, body } = await createUser(req);
+  res.status(status).header("Authorization", `Bearer ${token}`).send(body);
 });
 
 export default users;

@@ -188,3 +188,338 @@ Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to 
 Error: ValidationError: autherName: Path `autherName` (`xyz`) is shorter than the minimum allowed length (5).
 2024-12-10T12:45:39.542Z [error]: Cannot set headers after they are sent to the client:
 Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2024-12-13T04:48:11.570Z [error]: user is not defined:
+Error: ReferenceError: user is not defined
+2024-12-17T05:51:55.695Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T05:56:39.093Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T06:02:36.802Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T06:03:22.306Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T06:40:59.154Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T06:50:36.867Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T06:51:01.426Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T06:51:59.256Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T06:53:20.029Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T07:25:57.802Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T18:57:35.787Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T18:58:15.932Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T18:59:22.738Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:02:05.817Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:09:12.377Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:10:15.234Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:10:17.322Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:12:56.436Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:12:58.807Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:13:57.857Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:14:04.955Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:14:14.911Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:14:22.006Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:15:13.583Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-17T19:15:17.137Z [error]: book validation failed: location: Path `location` is required.:
+Error: ValidationError: location: Path `location` is required.
+2024-12-18T07:23:20.803Z [error]: Invalid status code: { status: 200, body: [Object] }:
+Error: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: { status: 200, body: [Object] }
+2024-12-18T07:23:21.977Z [error]: Invalid status code: { status: 200, body: [Object] }:
+Error: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: { status: 200, body: [Object] }
+2024-12-18T07:23:24.007Z [error]: Invalid status code: { status: 200, body: [Object] }:
+Error: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: { status: 200, body: [Object] }
+2024-12-18T07:23:28.040Z [error]: Invalid status code: { status: 200, body: [Object] }:
+Error: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: { status: 200, body: [Object] }
+2024-12-18T07:59:28.740Z [error]: Cannot set headers after they are sent to the client:
+Error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+2024-12-18T09:25:15.306Z [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "book":
+Error: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "book"
+2024-12-18T09:25:15.806Z [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "book":
+Error: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "book"
+2024-12-18T09:25:44.278Z [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "book":
+Error: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "book"
+2024-12-18T09:25:44.745Z [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "book":
+Error: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "book"
+2024-12-18T09:36:17.275Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:36:18.884Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:36:20.927Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:36:23.028Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:36:24.061Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:36:26.498Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:37:07.466Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:39:45.291Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:39:45.752Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:40:53.337Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:40:53.564Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:40:54.070Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:40:55.103Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:40:57.129Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:41:57.522Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:41:58.986Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:43:15.418Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:43:17.735Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:43:18.748Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:43:25.501Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:43:27.556Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:44:01.274Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:44:13.562Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:44:19.117Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:44:21.258Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:45:06.342Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-18T09:52:52.823Z [error]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function router:
+Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function router
+2024-12-18T09:52:53.874Z [error]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function router:
+Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function router
+2024-12-18T09:53:31.864Z [error]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function router:
+Error: TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function router
+2024-12-19T07:32:49.234Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T07:32:50.466Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T07:32:52.487Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T07:32:56.504Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T07:33:42.263Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T09:10:46.897Z [error]: '_id' starts with an invalid character for a user variable name:
+Error: MongoServerError: '_id' starts with an invalid character for a user variable name
+2024-12-19T09:10:47.926Z [error]: '_id' starts with an invalid character for a user variable name:
+Error: MongoServerError: '_id' starts with an invalid character for a user variable name
+2024-12-19T09:10:49.967Z [error]: '_id' starts with an invalid character for a user variable name:
+Error: MongoServerError: '_id' starts with an invalid character for a user variable name
+2024-12-19T09:28:01.477Z [error]: FieldPath field names may not be empty strings.:
+Error: MongoServerError: FieldPath field names may not be empty strings.
+2024-12-19T09:28:02.700Z [error]: FieldPath field names may not be empty strings.:
+Error: MongoServerError: FieldPath field names may not be empty strings.
+2024-12-19T09:28:09.193Z [error]: FieldPath field names may not be empty strings.:
+Error: MongoServerError: FieldPath field names may not be empty strings.
+2024-12-19T09:52:47.426Z [error]: FieldPath field names may not be empty strings.:
+Error: MongoServerError: FieldPath field names may not be empty strings.
+2024-12-19T09:52:55.730Z [error]: FieldPath field names may not be empty strings.:
+Error: MongoServerError: FieldPath field names may not be empty strings.
+2024-12-19T10:14:05.690Z [error]: ObjectId is not defined:
+Error: ReferenceError: ObjectId is not defined
+2024-12-19T10:14:06.740Z [error]: ObjectId is not defined:
+Error: ReferenceError: ObjectId is not defined
+2024-12-19T10:15:21.591Z [error]: ObjectId is not defined:
+Error: ReferenceError: ObjectId is not defined
+2024-12-19T10:15:26.420Z [error]: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object:
+Error: MongoServerError: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object
+2024-12-19T10:15:27.447Z [error]: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object:
+Error: MongoServerError: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object
+2024-12-19T10:15:41.680Z [error]: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object:
+Error: MongoServerError: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object
+2024-12-19T10:15:58.356Z [error]: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object:
+Error: MongoServerError: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object
+2024-12-19T10:16:02.594Z [error]: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object:
+Error: MongoServerError: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object
+2024-12-19T10:16:03.630Z [error]: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object:
+Error: MongoServerError: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object
+2024-12-19T10:16:05.666Z [error]: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object:
+Error: MongoServerError: $lookup argument 'foreignField' must be a string, found foreignField: { path: "bookId", instance: "ObjectId", validators: [], getters: [], setters: [], _presplitPath: [ "bookId" ], options: {}, _index: null }: object
+2024-12-19T10:21:50.845Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:21:51.882Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:34:35.767Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:34:36.828Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:34:38.875Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:34:42.916Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:35:10.086Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:35:12.134Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:35:16.158Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:35:48.547Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:35:49.625Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:35:51.923Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:36:00.490Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T10:58:32.376Z [error]: Cannot access 'id' before initialization:
+Error: ReferenceError: Cannot access 'id' before initialization
+2024-12-19T10:58:33.522Z [error]: Cannot access 'id' before initialization:
+Error: ReferenceError: Cannot access 'id' before initialization
+2024-12-19T10:59:05.033Z [error]: Class constructor ObjectId cannot be invoked without 'new':
+Error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+2024-12-19T10:59:07.058Z [error]: Class constructor ObjectId cannot be invoked without 'new':
+Error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+2024-12-19T11:00:24.223Z [error]: Class constructor ObjectId cannot be invoked without 'new':
+Error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+2024-12-19T11:00:40.722Z [error]: Class constructor ObjectId cannot be invoked without 'new':
+Error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+2024-12-19T11:02:10.103Z [error]: Class constructor ObjectId cannot be invoked without 'new':
+Error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+2024-12-19T11:02:11.154Z [error]: Class constructor ObjectId cannot be invoked without 'new':
+Error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+2024-12-19T11:05:35.839Z [error]: Class constructor ObjectId cannot be invoked without 'new':
+Error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+2024-12-19T11:05:36.881Z [error]: Class constructor ObjectId cannot be invoked without 'new':
+Error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+2024-12-19T11:05:43.515Z [error]: Class constructor ObjectId cannot be invoked without 'new':
+Error: TypeError: Class constructor ObjectId cannot be invoked without 'new'
+2024-12-19T11:22:34.119Z [error]: bookId is not defined:
+Error: ReferenceError: bookId is not defined
+2024-12-19T11:22:35.139Z [error]: bookId is not defined:
+Error: ReferenceError: bookId is not defined
+2024-12-19T11:24:09.132Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T11:24:10.164Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T11:24:12.184Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T11:24:42.315Z [error]: Arguments must be aggregate pipeline operators:
+Error: Error: Arguments must be aggregate pipeline operators
+2024-12-19T11:31:57.226Z [error]: student is not defined:
+Error: ReferenceError: student is not defined
+2024-12-19T11:31:58.266Z [error]: student is not defined:
+Error: ReferenceError: student is not defined
+2024-12-19T11:32:00.283Z [error]: student is not defined:
+Error: ReferenceError: student is not defined
+2024-12-23T04:53:22.156Z [error]: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "requestedborrows":
+Error: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "requestedborrows"
+2024-12-23T04:55:13.070Z [error]: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "requestedborrows":
+Error: CastError: Cast to ObjectId failed for value "1" (type string) at path "_id" for model "requestedborrows"
+2024-12-23T06:28:01.239Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:129:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:29:05.951Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:129:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:30:27.151Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:130:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:33:56.526Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:132:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:34:38.607Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:134:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:37:01.887Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:135:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:37:22.364Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:134:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:49:08.015Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:134:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:51:04.316Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:134:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:52:22.298Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:134:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T06:57:04.089Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:134:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T07:02:17.465Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:136:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T07:02:52.547Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:136:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T07:03:18.924Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:136:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T07:04:04.871Z [error]: requestBorrow.seve is not a function
+Stack Trace: TypeError: requestBorrow.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:136:38)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T07:06:16.724Z [error]: borrowBook.seve is not a function
+Stack Trace: TypeError: borrowBook.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:134:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T07:07:35.503Z [error]: borrowBook.seve is not a function
+Stack Trace: TypeError: borrowBook.seve is not a function
+    at updeteRequestBorrow (file:///D:/OptimaGeeks/LMS/app/controller/requestborrowsController.js:134:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///D:/OptimaGeeks/LMS/app/routes/requesteBorrows.js:36:28
+2024-12-23T07:08:06.014Z [error]: BorrowBook validation failed: dateOut: Path `dateOut` is required., datedue: Path `datedue` is required.
+Stack Trace: ValidationError: BorrowBook validation failed: dateOut: Path `dateOut` is required., datedue: Path `datedue` is required.
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)

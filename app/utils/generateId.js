@@ -37,11 +37,10 @@ async function createIdGenerator() {
     return carry ? "AA" : chars.join("");
   }
 
-  return async function generateId() {
-    const id = `${state.prefix}${state.year}${String(state.counter).padStart(
-      6,
-      "0"
-    )}`;
+  return async function generateId(type) {
+    const id = `${state.prefix}${state.year}${type}${String(
+      state.counter
+    ).padStart(6, "0")}`;
     state.counter++;
 
     if (state.counter > 999999) {
