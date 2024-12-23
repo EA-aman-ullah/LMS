@@ -143,7 +143,6 @@ export async function updeteRequestBorrow(id) {
 
     await session.commitTransaction();
     session.endSession();
-
     return { status: 201, body: result };
   } catch (error) {
     await session.abortTransaction();

@@ -44,7 +44,7 @@ export async function updateBorrow(req) {
   session.startTransaction();
 
   try {
-    borrowBook.isNotReturned === false;
+    borrowBook.isNotReturned = false;
     await borrowBook.save({ session });
 
     student.returnableBooks--;
@@ -76,7 +76,7 @@ export async function assingedBorrow(id) {
     },
     { new: true }
   );
-
+  console.log(borrowBook);
   if (!borrowBook)
     return { status: 404, body: "The Borrow with given id was not found!" };
   return { status: 201, body: borrowBook };

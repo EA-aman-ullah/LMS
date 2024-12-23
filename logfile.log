@@ -523,3 +523,39 @@ Stack Trace: ValidationError: BorrowBook validation failed: dateOut: Path `dateO
     at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
     at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
     at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-23T09:12:22.952Z [error]: Cannot call abortTransaction after calling commitTransaction:
+Error: MongoTransactionError: Cannot call abortTransaction after calling commitTransaction
+2024-12-23T09:12:35.279Z [error]: Cannot call abortTransaction after calling commitTransaction:
+Error: MongoTransactionError: Cannot call abortTransaction after calling commitTransaction
+2024-12-23T09:14:11.559Z [error]: Cannot call abortTransaction after calling commitTransaction:
+Error: MongoTransactionError: Cannot call abortTransaction after calling commitTransaction
+2024-12-23T12:36:41.252Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-23T12:40:42.862Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-23T12:44:14.544Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-23T12:44:44.908Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-23T12:48:54.544Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
