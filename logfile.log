@@ -559,3 +559,233 @@ Stack Trace: ValidationError: book validation failed: returnableBooks: Path `ret
     at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
     at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
     at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-24T05:39:37.001Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:39:38.019Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:39:40.956Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:39:44.986Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:40:51.300Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:40:53.725Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:40:55.972Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:41:02.460Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:41:05.211Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:41:29.269Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:42:15.419Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:43:37.719Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:43:39.933Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:43:41.073Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:43:43.242Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:47:15.809Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:47:16.469Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:47:17.630Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:47:19.779Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:47:23.922Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:48:17.706Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:48:52.125Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:48:54.273Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:48:58.430Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:49:05.159Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:49:06.362Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:49:09.348Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:49:39.140Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:49:49.688Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:49:50.890Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:49:53.019Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:49:57.152Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:50:20.036Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:50:21.171Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:50:23.339Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:50:31.857Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:50:37.575Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:50:38.598Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:50:40.629Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:50:58.040Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:51:00.016Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:51:01.112Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:53:04.566Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:53:08.649Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:53:11.276Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T05:53:49.557Z [error]: Cannot read properties of undefined (reading 'params'):
+Error: TypeError: Cannot read properties of undefined (reading 'params')
+2024-12-24T06:50:22.513Z [error]: islegible is not defined:
+Error: ReferenceError: islegible is not defined
+2024-12-24T06:50:23.546Z [error]: islegible is not defined:
+Error: ReferenceError: islegible is not defined
+2024-12-24T06:50:35.057Z [error]: islegible is not defined:
+Error: ReferenceError: islegible is not defined
+2024-12-24T07:00:29.931Z [error]: Aggregate has empty pipeline:
+Error: MongooseError: Aggregate has empty pipeline
+2024-12-24T07:00:30.956Z [error]: Aggregate has empty pipeline:
+Error: MongooseError: Aggregate has empty pipeline
+2024-12-24T07:32:42.630Z [error]: book.studentRequest.length is not a function:
+Error: TypeError: book.studentRequest.length is not a function
+2024-12-24T07:32:43.719Z [error]: book.studentRequest.length is not a function:
+Error: TypeError: book.studentRequest.length is not a function
+2024-12-24T07:33:47.923Z [error]: book.studentRequest.length is not a function:
+Error: TypeError: book.studentRequest.length is not a function
+2024-12-24T07:34:16.289Z [error]: book.studentRequest.length is not a function:
+Error: TypeError: book.studentRequest.length is not a function
+2024-12-24T07:34:17.405Z [error]: book.studentRequest.length is not a function:
+Error: TypeError: book.studentRequest.length is not a function
+2024-12-24T07:35:06.829Z [error]: book.studentRequest.length is not a function:
+Error: TypeError: book.studentRequest.length is not a function
+2024-12-24T07:35:12.570Z [error]: arr.length is not a function:
+Error: TypeError: arr.length is not a function
+2024-12-24T07:35:22.778Z [error]: arr.length is not a function:
+Error: TypeError: arr.length is not a function
+2024-12-24T07:35:24.643Z [error]: book.studentRequest.length is not a function:
+Error: TypeError: book.studentRequest.length is not a function
+2024-12-24T07:35:26.664Z [error]: book.studentRequest.length is not a function:
+Error: TypeError: book.studentRequest.length is not a function
+2024-12-24T07:35:48.898Z [error]: book.studentRequest.length is not a function:
+Error: TypeError: book.studentRequest.length is not a function
+2024-12-24T10:09:45.392Z [error]: noRequestPending is not defined:
+Error: ReferenceError: noRequestPending is not defined
+2024-12-24T10:09:46.443Z [error]: noRequestPending is not defined:
+Error: ReferenceError: noRequestPending is not defined
+2024-12-24T10:09:48.473Z [error]: noRequestPending is not defined:
+Error: ReferenceError: noRequestPending is not defined
+2024-12-24T10:09:52.518Z [error]: noRequestPending is not defined:
+Error: ReferenceError: noRequestPending is not defined
+2024-12-24T10:24:32.026Z [error]: islegible is not defined:
+Error: ReferenceError: islegible is not defined
+2024-12-24T11:14:52.018Z [error]: BorrowBook validation failed: book.location: Path `location` is required.
+Stack Trace: ValidationError: BorrowBook validation failed: book.location: Path `location` is required.
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at Subdocument.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-24T11:14:52.520Z [error]: BorrowBook validation failed: book.location: Path `location` is required.
+Stack Trace: ValidationError: BorrowBook validation failed: book.location: Path `location` is required.
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at Subdocument.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-24T11:14:53.488Z [error]: BorrowBook validation failed: book.location: Path `location` is required.
+Stack Trace: ValidationError: BorrowBook validation failed: book.location: Path `location` is required.
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at Subdocument.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-24T11:14:53.920Z [error]: BorrowBook validation failed: book.location: Path `location` is required.
+Stack Trace: ValidationError: BorrowBook validation failed: book.location: Path `location` is required.
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at Subdocument.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-12-24T11:29:13.629Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:29:14.662Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:29:16.684Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:30:32.285Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:32:07.269Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:32:08.549Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:32:09.578Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:32:11.613Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:32:15.638Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:33:44.376Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:33:45.658Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:33:46.702Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T11:35:53.557Z [error]: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $in requires an array as a second argument, found: bool
+2024-12-24T12:46:13.367Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T12:46:14.417Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T12:46:26.258Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T12:46:29.053Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T12:46:32.312Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T13:00:37.628Z [error]: Cannot do inclusion on field isReturned in exclusion projection:
+Error: MongoServerError: Cannot do inclusion on field isReturned in exclusion projection
+2024-12-24T13:14:35.049Z [error]: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection:
+Error: MongoServerError: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection
+2024-12-24T13:14:36.086Z [error]: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection:
+Error: MongoServerError: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection
+2024-12-24T13:16:02.031Z [error]: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection:
+Error: MongoServerError: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection
+2024-12-24T13:18:36.137Z [error]: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection:
+Error: MongoServerError: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection
+2024-12-24T13:18:37.182Z [error]: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection:
+Error: MongoServerError: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection
+2024-12-24T13:18:39.617Z [error]: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection:
+Error: MongoServerError: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection
+2024-12-24T13:19:35.538Z [error]: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection:
+Error: MongoServerError: Invalid $project :: caused by :: Cannot use expression other than $meta in exclusion projection
+2024-12-24T13:23:03.843Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T13:23:04.894Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T13:23:06.929Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T13:24:53.542Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T13:25:47.200Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T13:25:48.587Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T13:25:49.635Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-24T13:25:51.691Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
+Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId

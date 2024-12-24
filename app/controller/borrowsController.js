@@ -18,11 +18,11 @@ export async function getBorrow(req) {
     } else return { status: 200, body: borrow };
   } else {
     if (req.user.role !== "student") {
-      return await BorrowBook.find({ isNotReturned: true }).sort("book.name");
+      return await BorrowBook.find({ isReturned: false }).sort("book.name");
     } else {
       return await BorrowBook.find({
         "student._id": req.user._id,
-        isNotReturned: true,
+        isReturned: false,
       }).sort("book.name");
     }
   }
@@ -44,7 +44,7 @@ export async function updateBorrow(req) {
   session.startTransaction();
 
   try {
-    borrowBook.isNotReturned = false;
+    borrowBook.isReturned = true;
     await borrowBook.save({ session });
 
     student.returnableBooks--;
@@ -76,7 +76,7 @@ export async function assingedBorrow(id) {
     },
     { new: true }
   );
-  console.log(borrowBook);
+
   if (!borrowBook)
     return { status: 404, body: "The Borrow with given id was not found!" };
   return { status: 201, body: borrowBook };

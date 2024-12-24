@@ -54,17 +54,33 @@ export async function createRequestBorrow(req) {
   if (book.numberInStock === 0)
     return { status: 400, body: "Book not in Stock" };
 
-  const BorrowsExist = await BorrowBook.findOne({
-    "student._id": req.user._id,
-    "book._id": req.body.bookId,
+  const borrow = await BorrowBook.find(
+    {
+      "student._id": req.user._id,
+      "book._id": req.body.bookId,
+    },
+    { _id: 0, isReturned: 1 }
+  );
+
+  const request = await RequestBorrows.find(
+    {
+      "student._id": req.user._id,
+      "book._id": req.body.bookId,
+    },
+    { _id: 0, isApproved: 1 }
+  );
+  let noRequestPending = request.every((el) => {
+    return el.isApproved === true;
+  });
+  let noBorrowPending = borrow.every((el) => {
+    return el.isReturned === true;
   });
 
-  const requestBorrowsExist = await RequestBorrows.findOne({
-    "student._id": req.user._id,
-    "book._id": req.body.bookId,
-  });
+  console.log(borrow, request);
 
-  if (BorrowsExist || requestBorrowsExist)
+  console.log(noBorrowPending, noRequestPending);
+
+  if (!noRequestPending || !noBorrowPending)
     return { status: 422, body: "This book Already requested By this Student" };
 
   let borrowQuantity = await RequestBorrows.countDocuments({
@@ -75,7 +91,14 @@ export async function createRequestBorrow(req) {
 
   let requestBorrowBook = new RequestBorrows({
     student: _.pick(student, ["_id", "name", "phone", "imageURL", "studentId"]),
-    book: _.pick(book, ["_id", "name", "autherName", "imageURL", "bookId"]),
+    book: _.pick(book, [
+      "_id",
+      "name",
+      "autherName",
+      "imageURL",
+      "bookId",
+      "location",
+    ]),
   });
 
   const session = await mongoose.startSession();
@@ -121,7 +144,14 @@ export async function updeteRequestBorrow(id) {
 
   let borrowBook = new BorrowBook({
     student: _.pick(student, ["_id", "name", "phone", "imageURL", "studentId"]),
-    book: _.pick(book, ["_id", "name", "autherName", "imageURL", "bookId"]),
+    book: _.pick(book, [
+      "_id",
+      "name",
+      "autherName",
+      "imageURL",
+      "bookId",
+      "location",
+    ]),
   });
 
   const session = await mongoose.startSession();

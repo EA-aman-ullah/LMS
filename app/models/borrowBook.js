@@ -53,11 +53,15 @@ export const borrowSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
+      location: {
+        type: String,
+        required: true,
+      },
     }),
     required: true,
   },
 
-  isNotReturned: { type: Boolean, default: true },
+  isReturned: { type: Boolean, default: false },
   isAssigned: { type: Boolean, default: false },
   dateOut: { type: Date },
   datedue: { type: Date },

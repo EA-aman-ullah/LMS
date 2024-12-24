@@ -33,13 +33,13 @@ export async function getOverview(req) {
 
   if (req.user.role !== "student") {
     let borrowBooks = await BorrowBook.countDocuments({
-      isNotReturned: true,
+      isReturned: false,
     });
     Overview.push({ title: "Active Borrowed Books", value: borrowBooks });
   } else {
     let borrowBooks = await BorrowBook.countDocuments({
       "student._id": req.user._id,
-      isNotReturned: true,
+      isReturned: false,
     });
     Overview.push({ title: "Active Borrowed Books", value: borrowBooks });
   }

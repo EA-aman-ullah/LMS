@@ -14,12 +14,11 @@ const books = express.Router();
 
 books.get("/", async (req, res) => {
   const { status, body } = await getBooks();
-
   res.status(status).send(body);
 });
 
 books.get("/:id", async (req, res) => {
-  const { status, body } = await getBooks(req.params.id);
+  const { status, body } = await getBooks(req);
   res.status(status).send(body);
 });
 

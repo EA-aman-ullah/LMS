@@ -53,6 +53,10 @@ export const requestedBorrowsSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
+      location: {
+        type: String,
+        required: true,
+      },
     }),
     required: true,
   },
