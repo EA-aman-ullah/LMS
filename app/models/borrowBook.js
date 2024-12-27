@@ -63,8 +63,8 @@ export const borrowSchema = new mongoose.Schema({
 
   isReturned: { type: Boolean, default: false },
   isAssigned: { type: Boolean, default: false },
-  dateOut: { type: Date },
-  datedue: { type: Date },
+  dateAssign: { type: Date },
+  dateReturn: { type: Date },
   //  {
   //   type: Date,
   //   required: true,
@@ -74,7 +74,7 @@ export const borrowSchema = new mongoose.Schema({
   //     return currentDate;
   //   },
   // },
-});
+},{ timestamps: true } );
 
 const BorrowBook = mongoose.model("BorrowBook", borrowSchema);
 

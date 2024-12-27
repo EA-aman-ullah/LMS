@@ -23,12 +23,14 @@ export async function getRequestBorrows(req) {
     } else return { status: 200, body: requestBorrow };
   } else {
     if (req.user.role !== "student") {
-      const requestBorrow = await RequestBorrows.find();
+      const requestBorrow = await RequestBorrows.find().sort({
+        isApproved: 1,
+      });
       return { status: 200, body: requestBorrow };
     } else {
       const requestBorrow = await RequestBorrows.find({
         "student._id": req.user._id,
-      });
+      }).sort({ isApproved: 1 });
       return { status: 200, body: requestBorrow };
     }
   }
@@ -75,10 +77,6 @@ export async function createRequestBorrow(req) {
   let noBorrowPending = borrow.every((el) => {
     return el.isReturned === true;
   });
-
-  console.log(borrow, request);
-
-  console.log(noBorrowPending, noRequestPending);
 
   if (!noRequestPending || !noBorrowPending)
     return { status: 422, body: "This book Already requested By this Student" };

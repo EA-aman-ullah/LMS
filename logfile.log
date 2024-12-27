@@ -789,3 +789,35 @@ Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined var
 Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
 2024-12-24T13:25:51.691Z [error]: Invalid $addFields :: caused by :: Use of undefined variable: studentId:
 Error: MongoServerError: Invalid $addFields :: caused by :: Use of undefined variable: studentId
+2024-12-27T10:09:35.985Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:09:37.009Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:09:39.026Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:09:43.446Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:09:46.703Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:09:47.744Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:09:49.119Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:09:50.241Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:09:52.267Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:09:56.310Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:10:17.968Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:10:22.090Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:10:23.139Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:10:25.175Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:10:29.199Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-27T10:10:38.911Z [error]: Invalid sort value: { isApproved: false }:
+Error: TypeError: Invalid sort value: { isApproved: false }

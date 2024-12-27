@@ -101,6 +101,7 @@ export async function getBooks(req) {
           foreignField: "book._id",
           as: "requests",
           pipeline: [
+            { $match: { isApproved: false } },
             {
               $project: {
                 _id: 0,
@@ -120,6 +121,7 @@ export async function getBooks(req) {
           foreignField: "book._id",
           as: "borrows",
           pipeline: [
+            { $match: { isReturned: false } },
             {
               $project: {
                 _id: 0,
@@ -205,7 +207,7 @@ export async function getBooks(req) {
           noRequestPending: {
             $cond: {
               if: { $eq: [{ $size: "$pendingRequests" }, 0] },
-              then: false,
+              then: true,
               else: {
                 $allElementsTrue: [
                   {
@@ -222,7 +224,7 @@ export async function getBooks(req) {
           noBorrowPending: {
             $cond: {
               if: { $eq: [{ $size: "$pendingBorrows" }, 0] },
-              then: false,
+              then: true,
               else: {
                 $allElementsTrue: [
                   {

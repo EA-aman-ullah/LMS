@@ -71,8 +71,8 @@ export async function assingedBorrow(id) {
     id,
     {
       isAssigned: true,
-      dateOut: Date.now(),
-      datedue: new Date(new Date().setDate(new Date().getDate() + 10)),
+      dateAssign: Date.now(),
+      dateReturn: new Date(new Date().setDate(new Date().getDate() + 10)),
     },
     { new: true }
   );

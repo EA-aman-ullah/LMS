@@ -1,57 +1,56 @@
 import Joi from "joi";
 import mongoose from "mongoose";
 
-export const bookSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    minlength: 3,
-    maxlength: 255,
-  },
+export const bookSchema = new mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+      minlength: 3,
+      maxlength: 255,
+    },
 
-  autherName: {
-    type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 50,
+    autherName: {
+      type: String,
+      required: true,
+      minlength: 5,
+      maxlength: 50,
+    },
+    bookId: {
+      type: String,
+      required: true,
+      minlength: 5,
+      maxlength: 255,
+    },
+    location: {
+      type: String,
+      required: true,
+      minlength: 4,
+      maxlength: 255,
+    },
+    numberInStock: {
+      type: Number,
+      required: true,
+      default: 0,
+      min: 0,
+    },
+    returnableBooks: {
+      type: Number,
+      default: 0,
+      min: 0,
+    },
+    reservedNumber: {
+      type: Number,
+      default: 0,
+      min: 0,
+    },
+    imageURL: {
+      type: String,
+      required: true,
+    },
   },
-  bookId: {
-    type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 255,
-  },
-  location: {
-    type: String,
-    required: true,
-    minlength: 4,
-    maxlength: 255,
-  },
-  numberInStock: {
-    type: Number,
-    required: true,
-    default: 0,
-    min: 0,
-  },
-  returnableBooks: {
-    type: Number,
-    default: 0,
-    min: 0,
-  },
-  reservedNumber: {
-    type: Number,
-    default: 0,
-    min: 0,
-  },
-  imageURL: {
-    type: String,
-    required: true,
-  },
-  dateAdd: {
-    type: Date,
-    default: Date.now(),
-  },
-});
+  { timestamps: true }
+);
 
 bookSchema.pre("validate", async function (next) {
   if (!this.bookId) {

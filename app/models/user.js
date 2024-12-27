@@ -2,61 +2,63 @@ import Joi from "joi";
 import jwt from "jsonwebtoken";
 import config from "config";
 import mongoose from "mongoose";
-import admin from "../middleware/admin.js";
 
-export const userSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    minlength: 3,
-    maxlength: 255,
+export const userSchema = new mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+      minlength: 3,
+      maxlength: 255,
+    },
+    email: {
+      type: String,
+      required: true,
+      minlength: 5,
+      maxlength: 255,
+      unique: true,
+      match: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+    },
+    password: {
+      type: String,
+      required: true,
+      minlength: 5,
+      maxlength: 1024,
+    },
+    phone: {
+      type: String,
+      required: true,
+      minlength: 5,
+      maxlength: 50,
+    },
+    studentId: {
+      type: String,
+      required: true,
+      minlength: 5,
+      maxlength: 255,
+    },
+    returnableBooks: {
+      type: Number,
+      default: 0,
+    },
+    requestBorrows: {
+      type: Number,
+      default: 0,
+      required: true,
+    },
+    role: {
+      type: String,
+      admin: ["admin", "librarian", "student"],
+      required: true,
+      default: "student",
+    },
+    imageURL: {
+      type: String,
+      // required: true,
+    },
   },
-  email: {
-    type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 255,
-    unique: true,
-    match: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-  },
-  password: {
-    type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 1024,
-  },
-  phone: {
-    type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 50,
-  },
-  studentId: {
-    type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 255,
-  },
-  returnableBooks: {
-    type: Number,
-    default: 0,
-  },
-  requestBorrows: {
-    type: Number,
-    default: 0,
-    required: true,
-  },
-  role: {
-    type: String,
-    admin: ["admin", "librarian", "student"],
-    required: true,
-    default: "student",
-  },
-  imageURL: {
-    type: String,
-    // required: true,
-  },
-});
+  { timestamps: true }
+);
 
 userSchema.pre("validate", async function (next) {
   if (!this.studentId) {
