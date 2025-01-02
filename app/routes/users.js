@@ -3,6 +3,9 @@ import {
   createUser,
   getCurrentUser,
   getStudent,
+  reSendOtp,
+  sendOtp,
+  verifyOTP,
 } from "../controller/usersController.js";
 import auth from "../middleware/auth.js";
 import managment from "../middleware/managment.js";
@@ -24,8 +27,18 @@ users.get("/students/:id", [auth, managment], async (req, res) => {
   res.status(status).send(body);
 });
 
-users.post("/", handleImage, async (req, res) => {
-  const { status, header: token, body } = await createUser(req);
+users.post("/register", async (req, res) => {
+  const { status, body } = await sendOtp(req);
+  res.status(status).send(body);
+});
+
+users.get("/resend-otp/:id", async (req, res) => {
+  const { status, body } = await reSendOtp(req);
+  res.status(status).send(body);
+});
+
+users.post("/verify-otp/:id", async (req, res) => {
+  const { status, header: token, body } = await verifyOTP(req);
   res.status(status).header("Authorization", `Bearer ${token}`).send(body);
 });
 

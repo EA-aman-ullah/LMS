@@ -821,3 +821,30 @@ Error: TypeError: Invalid sort value: { isApproved: false }
 Error: TypeError: Invalid sort value: { isApproved: false }
 2024-12-27T10:10:38.911Z [error]: Invalid sort value: { isApproved: false }:
 Error: TypeError: Invalid sort value: { isApproved: false }
+2024-12-31T07:49:15.664Z [error]: BorrowBook validation failed: student.imageURL: Path `imageURL` is required.
+Stack Trace: ValidationError: BorrowBook validation failed: student.imageURL: Path `imageURL` is required.
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at Subdocument.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\types\subdocument.js:229:12)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-01T07:39:41.352Z [error]: User validation failed: otp: Path `otp` is required.:
+Error: ValidationError: otp: Path `otp` is required.
+2025-01-01T12:50:25.300Z [error]: E11000 duplicate key error collection: LMS.users index: email_1 dup key: { email: "hiamanullahkodex@gmail.com" }:
+Error: MongoServerError: E11000 duplicate key error collection: LMS.users index: email_1 dup key: { email: "hiamanullahkodex@gmail.com" }
+2025-01-01T12:55:39.200Z [error]: E11000 duplicate key error collection: LMS.users index: email_1 dup key: { email: "hiamanullahkodex@gmail.com" }:
+Error: MongoServerError: E11000 duplicate key error collection: LMS.users index: email_1 dup key: { email: "hiamanullahkodex@gmail.com" }
+2025-01-01T12:55:41.458Z [error]: E11000 duplicate key error collection: LMS.users index: email_1 dup key: { email: "hiamanullahkodex@gmail.com" }:
+Error: MongoServerError: E11000 duplicate key error collection: LMS.users index: email_1 dup key: { email: "hiamanullahkodex@gmail.com" }
+2025-01-01T13:00:38.340Z [error]: body is not defined:
+Error: ReferenceError: body is not defined
+2025-01-02T07:29:33.205Z [error]: Assignment to constant variable.:
+Error: TypeError: Assignment to constant variable.
+2025-01-02T13:20:58.364Z [error]: string is not defined:
+Error: ReferenceError: string is not defined
+2025-01-02T13:30:35.779Z [error]: body is not defined:
+Error: ReferenceError: body is not defined
+2025-01-02T13:33:50.474Z [error]: body is not defined:
+Error: ReferenceError: body is not defined
+2025-01-02T13:42:09.243Z [error]: body is not defined:
+Error: ReferenceError: body is not defined

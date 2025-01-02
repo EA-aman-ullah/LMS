@@ -56,6 +56,15 @@ export const userSchema = new mongoose.Schema(
       type: String,
       // required: true,
     },
+    otp: {
+      type: String,
+      required: true,
+    },
+    isVarified: {
+      type: Boolean,
+      default: false,
+      required: true,
+    },
   },
   { timestamps: true }
 );
@@ -94,6 +103,14 @@ export function validateUser(user) {
   };
 
   return Joi.object(schema).validate(user);
+}
+
+export function validateUserOtp(userId) {
+  const schema = {
+    otp: Joi.string().min(6).max(10).required(),
+  };
+
+  return Joi.object(schema).validate(userId);
 }
 
 export default User;

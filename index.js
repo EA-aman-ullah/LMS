@@ -13,4 +13,4 @@ validation();
 router(app);
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => logger.info(`Listning on Port ${port}...`));
+app.listen(port, () => logger.info(`Listening on Port ${port}...`));

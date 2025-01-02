@@ -25,7 +25,7 @@ export const requestedBorrowsSchema = new mongoose.Schema(
         },
         imageURL: {
           type: String,
-          required: true,
+          // required: true,
         },
       }),
       required: true,
