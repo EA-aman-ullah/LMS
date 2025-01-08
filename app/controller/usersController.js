@@ -1,8 +1,13 @@
-import User, { validateUser, validateUserOtp } from "../models/user.js";
-import nodemailer from "nodemailer";
-import crypto from "crypto";
+import User, {
+  validateUser,
+  validateUserEmail,
+  validateUserOtp,
+  validateUserPassword,
+} from "../models/user.js";
 import bcrypt from "bcrypt";
 import _ from "lodash";
+import { sendOTP } from "../utils/otp.js";
+import RequestsBorrows from "../models/requestsBorrows.js";
 
 export async function getCurrentUser(req) {
   return await User.findById(req.user._id).select("-password");
@@ -47,66 +52,25 @@ export async function createUser(req) {
   };
 }
 
-export async function sendOtp(req) {
+export async function sendOtpOnregister(req) {
   const { error } = validateUser(req.body);
   if (error) return { status: 400, body: error.details[0].message };
-
-  req.body.otp = crypto.randomInt(100000, 999999).toString();
 
   let user = await User.findOne({ email: req.body.email });
   if (user) {
     if (user.isVarified) {
-      user.message = "You are already registerd";
-
-      return { status: 400, body: user };
+      return { status: 400, body: { message: "You are already registerd" } };
     } else {
-      const transporter = nodemailer.createTransport({
-        service: "Gmail", // Adjust as needed
-        auth: {
-          user: "ea.amanullah@gmail.com",
-          pass: "bzqh kppx lxbg nnjd",
-        },
-      });
-
-      const mailOptions = {
-        from: "ea.amanullah@gmail.com",
-        to: req.body.email,
-        subject: "Verify Your Email",
-        text: `Your OTP is ${req.body.otp}`,
-      };
-
-      await transporter.sendMail(mailOptions);
-      user.otp = req.body.otp;
+      user.otp = await sendOTP(req.body.email);
       user = await user.save();
       user = _.pick(user, ["_id", "name", "email", "phone"]);
       user.message = "OTP sent to your email.";
       return { status: 201, body: user };
     }
   }
-  const salt = await bcrypt.genSalt(10);
-  req.body.password = await bcrypt.hash(req.body.password, salt);
 
-  user = new User(
-    _.pick(req.body, ["name", "email", "password", "phone", "otp"])
-  );
-
-  const transporter = nodemailer.createTransport({
-    service: "Gmail", // Adjust as needed
-    auth: {
-      user: "ea.amanullah@gmail.com",
-      pass: "bzqh kppx lxbg nnjd",
-    },
-  });
-
-  const mailOptions = {
-    from: "ea.amanullah@gmail.com",
-    to: req.body.email,
-    subject: "Verify Your Email",
-    text: `Your OTP is ${req.body.otp}`,
-  };
-
-  await transporter.sendMail(mailOptions);
-
+  user = new User(_.pick(req.body, ["name", "email", , "phone"]));
+  user.otp = await sendOTP(req.body.email);
   user = await user.save();
   user = _.pick(user, ["_id", "name", "email", "phone"]);
   user.message = "OTP sent to your email.";
@@ -114,38 +78,15 @@ export async function sendOtp(req) {
 }
 
 export async function reSendOtp(req) {
-  req.body.otp = crypto.randomInt(100000, 999999).toString();
-
   let user = await User.findById(req.params.id);
-  if (user) {
-    if (user.isVarified) {
-      user.message = "You are already registerd";
+  if (!user)
+    return { status: 404, body: "User with the given id was not found" };
 
-      return { status: 400, body: user };
-    } else {
-      const transporter = nodemailer.createTransport({
-        service: "Gmail", // Adjust as needed
-        auth: {
-          user: "ea.amanullah@gmail.com",
-          pass: "bzqh kppx lxbg nnjd",
-        },
-      });
-
-      const mailOptions = {
-        from: "ea.amanullah@gmail.com",
-        to: user.email,
-        subject: "Verify Your Email",
-        text: `Your OTP is ${req.body.otp}`,
-      };
-
-      await transporter.sendMail(mailOptions);
-      user.otp = req.body.otp;
-      user = await user.save();
-      user = _.pick(user, ["_id", "name", "email", "phone"]);
-      user.message = "OTP sent to your email.";
-      return { status: 201, body: user };
-    }
-  }
+  user.otp = await sendOTP(user.email);
+  user = await user.save();
+  user = _.pick(user, ["_id", "name", "email", "phone"]);
+  user.message = "OTP sent to your email.";
+  return { status: 201, body: user };
 }
 
 export async function verifyOTP(req) {
@@ -155,9 +96,6 @@ export async function verifyOTP(req) {
   let user = await User.findById(req.params.id);
   if (!user)
     return { status: 404, body: "User with the given id was not found" };
-
-  if (user.isVarified)
-    return { status: 400, body: "You are already registerd" };
 
   let validDueToCreated = new Date(user.createdAt.getTime() + 60000);
   let validDueToUpdated = new Date(user.updatedAt.getTime() + 60000);
@@ -176,9 +114,59 @@ export async function verifyOTP(req) {
 
   const token = user.generateAuthToken();
 
-  user = _.pick(user, ["_id", "name", "email", "phone", "isVarified"]);
+  user = _.pick(user, ["_id", "name", "email", "phone", "isVarified", "role"]);
 
   return { status: 201, header: token, body: user };
+}
+
+export async function sentOtpOnforgetPassword(req) {
+  const { error } = validateUserEmail(req.body);
+  if (error) return { status: 400, body: error.details[0].message };
+
+  let user = await User.findOne({ email: req.body.email });
+  if (!user) return { status: 404, body: "Email does not exist" };
+
+  user.otp = await sendOTP(user.email);
+
+  await user.save();
+
+  user = _.pick(user, ["_id", "email"]);
+
+  user.message = "OTP sent to your email.";
+
+  return { status: 201, body: user };
+}
+
+export async function setPassword(req) {
+  const { error } = validateUserPassword(req.body);
+  if (error) return { status: 400, body: error.details[0].message };
+
+  let user = await User.findById(req.params.id);
+  if (!user)
+    return { status: 404, body: "User with the given Id was not found" };
+
+  const salt = await bcrypt.genSalt(10);
+  user.password = await bcrypt.hash(req.body.password, salt);
+
+  await user.save();
+
+  const token = user.generateAuthToken();
+
+  user = _.pick(user, ["_id", "name", "email", "phone", "isVarified", "role"]);
+
+  return { status: 201, header: token, body: user };
+}
+
+export async function getUserOpenRequests(req) {
+  const requests = await RequestsBorrows.find(
+    {
+      "student._id": req.params.id,
+      isReturned: false,
+    },
+    { student: 0 }
+  );
+
+  return { status: 201, body: requests };
 }
 
 // export async function updateUser(req) {

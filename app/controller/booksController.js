@@ -3,91 +3,7 @@ import { Types } from "mongoose";
 import _ from "lodash";
 
 export async function getBooks(req) {
-  if (req?.params.id) {
-    // const [book] = await Book.aggregate([
-    //   { $match: { _id: new Types.ObjectId(req.params.id) } },
-    //   {
-    //     $lookup: {
-    //       from: "requestedborrows",
-    //       localField: "_id",
-    //       foreignField: "book._id",
-    //       as: "requests",
-    //       pipeline: [
-    //         {
-    //           $project: {
-    //             _id: 0,
-    //             studentId: "$student._id",
-    //             studentName: "$student.name",
-    //             studentPhone: "$student.phone",
-    //             studentImage: "$student.imageURL",
-    //           },
-    //         },
-    //       ],
-    //     },
-    //   },
-    //   {
-    //     $lookup: {
-    //       from: "borrowbooks",
-    //       localField: "_id",
-    //       foreignField: "book._id",
-    //       as: "borrows",
-    //       pipeline: [
-    //         {
-    //           $project: {
-    //             _id: 0,
-    //             studentId: "$student._id",
-    //             studentName: "$student.name",
-    //             studentPhone: "$student.phone",
-    //             studentImage: "$student.imageURL",
-    //           },
-    //         },
-    //       ],
-    //     },
-    //   },
-    // ]);
-    // if (!book)
-    //   return { status: 404, body: "Book with the given Id was not found" };
-
-    // const student = await User.find({ _id: req.query.studentId });
-    // let islegible;
-
-    // student.requestBorrows === 0 && student.returnableBooks === 0
-    //   ? (islegible = true)
-    //   : (islegible = false);
-
-    // if (!islegible) {
-    //   let request = await RequestBorrows.find(
-    //     {
-    //       "student._id": req.query.studentId,
-    //       "book._id": req.params.id,
-    //     },
-    //     {
-    //       _id: 0,
-    //       isApproved: 1,
-    //     }
-    //   );
-    //   let borrow = await BorrowBook.find(
-    //     {
-    //       "student._id": req.query.studentId,
-    //       "book._id": req.params.id,
-    //     },
-    //     {
-    //       _id: 0,
-    //       isReturned: 1,
-    //     }
-    //   );
-    //   let noRequestPending = request.every((el) => {
-    //     return el.isApproved === true;
-    //   });
-    //   let noBorrowPending = borrow.every((el) => {
-    //     return el.isReturned === true;
-    //   });
-    //   noBorrowPending && noRequestPending
-    //     ? (islegible = true)
-    //     : (islegible = false);
-    // }
-
-    // book.islegible = islegible;
+  if (req.params.id) {
     const studentId = req.query.studentId
       ? new Types.ObjectId(req.query.studentId)
       : null;
@@ -96,7 +12,7 @@ export async function getBooks(req) {
       { $match: { _id: new Types.ObjectId(req.params.id) } },
       {
         $lookup: {
-          from: "requestedborrows",
+          from: "requestsborrows",
           localField: "_id",
           foreignField: "book._id",
           as: "requests",
@@ -116,12 +32,12 @@ export async function getBooks(req) {
       },
       {
         $lookup: {
-          from: "borrowbooks",
+          from: "requestsborrows",
           localField: "_id",
           foreignField: "book._id",
           as: "borrows",
           pipeline: [
-            { $match: { isReturned: false } },
+            { $match: { isReturned: false, isApproved: true } },
             {
               $project: {
                 _id: 0,
@@ -136,7 +52,7 @@ export async function getBooks(req) {
       },
       {
         $lookup: {
-          from: "requestedborrows",
+          from: "requestsborrows",
           let: {
             bookId: "$_id",
             studentId,
@@ -146,7 +62,9 @@ export async function getBooks(req) {
               $match: {
                 $expr: {
                   $and: [
-                    { $eq: ["$book._id", "$$bookId"] },
+                    {
+                      $eq: ["$book._id", "$$bookId"],
+                    },
                     {
                       $cond: {
                         if: { $not: ["$$studentId"] },
@@ -162,44 +80,11 @@ export async function getBooks(req) {
               $project: {
                 _id: 0,
                 isApproved: 1,
-              },
-            },
-          ],
-          as: "pendingRequests",
-        },
-      },
-      {
-        $lookup: {
-          from: "borrowbooks",
-          let: {
-            bookId: "$_id",
-            studentId,
-          },
-          pipeline: [
-            {
-              $match: {
-                $expr: {
-                  $and: [
-                    { $eq: ["$book._id", "$$bookId"] },
-                    {
-                      $cond: {
-                        if: { $not: ["$$studentId"] },
-                        then: false,
-                        else: { $eq: ["$student._id", "$$studentId"] },
-                      },
-                    },
-                  ],
-                },
-              },
-            },
-            {
-              $project: {
-                _id: 0,
                 isReturned: 1,
               },
             },
           ],
-          as: "pendingBorrows",
+          as: "pendingRequests",
         },
       },
       {
@@ -215,23 +100,7 @@ export async function getBooks(req) {
                       input: "$pendingRequests",
                       as: "request",
                       in: "$$request.isApproved",
-                    },
-                  },
-                ],
-              },
-            },
-          },
-          noBorrowPending: {
-            $cond: {
-              if: { $eq: [{ $size: "$pendingBorrows" }, 0] },
-              then: true,
-              else: {
-                $allElementsTrue: [
-                  {
-                    $map: {
-                      input: "$pendingBorrows",
-                      as: "borrow",
-                      in: "$$borrow.isReturned",
+                      in: "$$request.isReturned",
                     },
                   },
                 ],
@@ -244,7 +113,7 @@ export async function getBooks(req) {
         $addFields: {
           isLegible: {
             $cond: {
-              if: { $and: ["$noRequestPending", "$noBorrowPending"] },
+              if: "$noRequestPending",
               then: true,
               else: "$$REMOVE",
             },
@@ -254,9 +123,7 @@ export async function getBooks(req) {
       {
         $project: {
           pendingRequests: 0,
-          pendingBorrows: 0,
           noRequestPending: 0,
-          noBorrowPending: 0,
         },
       },
     ]);
@@ -266,7 +133,40 @@ export async function getBooks(req) {
 
     return { status: 200, body: book };
   } else {
-    const books = await Book.find({ numberInStock: { $gt: 0 } }).sort("name");
+    const { search, onlyAvailable, page = 2, limit = 10 } = req.query;
+
+    const pageNumber = parseInt(page);
+    const limitNumber = parseInt(limit);
+
+    const filter = {};
+
+    if (onlyAvailable) filter.numberInStock = { $gt: 0 };
+
+    if (search) {
+      filter.name = new RegExp(search, "i"); // 'i' for case-insensitive search
+    }
+
+    const result = await Book.find(filter)
+      .skip((pageNumber - 1) * limitNumber)
+      .limit(limitNumber);
+
+    const totalBooks = await Book.countDocuments();
+    let totalPages = Math.ceil(totalBooks / limit);
+    let hasNextPage =
+      totalBooks - page * limit > 0 && result.length >= limit ? true : false;
+
+    let books = {
+      status: 200,
+      message: "Data Retrived Successfuly",
+      result: result,
+      pagination: {
+        totalRecord: totalBooks,
+        totalPages: totalPages,
+        hasNextPage: hasNextPage,
+        currentPage: page,
+      },
+    };
+
     return { status: 200, body: books };
   }
 }
@@ -281,7 +181,9 @@ export async function createBook(req) {
       "autherName",
       "numberInStock",
       "imageURL",
+      "language",
       "location",
+      "description",
     ])
   );
   book = await book.save();

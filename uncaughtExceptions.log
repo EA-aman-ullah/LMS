@@ -690,3 +690,29 @@ Stack Trace: ReferenceError: Strin is not defined
     at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
     at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2025-01-03T14:41:37.100Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2025-01-03T17:00:07.716Z [error]: uncaughtException: FATAL ERROR: jwtPrivateKey is not defined
+Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
+    at default (file:///D:/OptimaGeeks/LMS/app/utils/config.js:5:11)
+    at file:///D:/OptimaGeeks/LMS/index.js:10:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)

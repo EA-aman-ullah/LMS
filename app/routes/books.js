@@ -13,7 +13,7 @@ import handleImage from "../middleware/multerCofing.js";
 const books = express.Router();
 
 books.get("/", async (req, res) => {
-  const { status, body } = await getBooks();
+  const { status, body } = await getBooks(req);
   res.status(status).send(body);
 });
 

@@ -22,6 +22,16 @@ export const bookSchema = new mongoose.Schema(
       minlength: 5,
       maxlength: 255,
     },
+    language: {
+      type: String,
+      minlength: 3,
+      maxlength: 255,
+    },
+    description: {
+      type: String,
+      minlength: 3,
+      maxlength: 30000,
+    },
     location: {
       type: String,
       required: true,
@@ -75,6 +85,8 @@ export function validateBook(book) {
     imageURL: Joi.string().required(),
     numberInStock: Joi.number().min(0),
     location: Joi.string().min(4).max(255).required(),
+    language: Joi.string().min(3).max(50).required(),
+    description: Joi.string().min(100).max(30000),
   };
 
   return Joi.object(schema).validate(book);

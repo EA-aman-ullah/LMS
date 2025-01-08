@@ -1,6 +1,5 @@
 import Book from "../models/book.js";
-import RequestBorrows from "../models/requestedBorrows.js";
-import BorrowBook from "../models/borrowBook.js";
+import RequestsBorrows from "../models/requestsBorrows.js";
 import User from "../models/user.js";
 
 export async function getOverview(req) {
@@ -13,7 +12,7 @@ export async function getOverview(req) {
   });
 
   if (req.user.role !== "student") {
-    let requestBorrows = await RequestBorrows.countDocuments({
+    let requestBorrows = await RequestsBorrows.countDocuments({
       isApproved: false,
     });
     Overview.push({
@@ -21,7 +20,7 @@ export async function getOverview(req) {
       value: requestBorrows,
     });
   } else {
-    let requestBorrows = await RequestBorrows.countDocuments({
+    let requestBorrows = await RequestsBorrows.countDocuments({
       "student._id": req.user._id,
       isApproved: false,
     });
@@ -32,13 +31,15 @@ export async function getOverview(req) {
   }
 
   if (req.user.role !== "student") {
-    let borrowBooks = await BorrowBook.countDocuments({
+    let borrowBooks = await RequestsBorrows.countDocuments({
+      isApproved: true,
       isReturned: false,
     });
     Overview.push({ title: "Active Borrowed Books", value: borrowBooks });
   } else {
     let borrowBooks = await BorrowBook.countDocuments({
       "student._id": req.user._id,
+      isApproved: true,
       isReturned: false,
     });
     Overview.push({ title: "Active Borrowed Books", value: borrowBooks });

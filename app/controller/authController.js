@@ -1,6 +1,7 @@
 import User from "../models/user.js";
 import bcrypt from "bcrypt";
 import Joi from "joi";
+import _ from "lodash";
 
 export async function getToken(req) {
   const { error } = validateUser(req.body);
@@ -12,7 +13,12 @@ export async function getToken(req) {
   let password = await bcrypt.compare(req.body.password, user.password);
   if (!password) return { status: 400, body: "Invailed Email or Password" };
 
+  if (!user.isVarified)
+    return { status: 400, body: "Invailed Email or Password" };
+
   const token = user.generateAuthToken();
+
+  user = _.pick(user, ["_id", "name", "email", "phone", "isVarified", "role"]);
 
   return { status: 200, header: token, body: user };
 }

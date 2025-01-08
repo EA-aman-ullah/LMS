@@ -3,10 +3,10 @@ import cors from "cors";
 import users from "./users.js";
 import error from "../middleware/error.js";
 import books from "./books.js";
-import borrows from "./borrowBooks.js";
 import auth from "./auth.js";
-import requestBorrows from "./requesteBorrows.js";
+import requests from "./requests.js";
 import dashboard from "./dasboard.js";
+import borrows from "./borrows.js";
 
 export default function (app) {
   app.use(
@@ -22,7 +22,7 @@ export default function (app) {
   app.use("/api/users", users);
   app.use("/api/books", books);
   app.use("/api/borrows", borrows);
-  app.use("/api/requestBorrows", requestBorrows);
+  app.use("/api/requests", requests);
   app.use("/api/auth", auth);
   app.use(error);
 }

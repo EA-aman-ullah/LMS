@@ -848,3 +848,163 @@ Error: ReferenceError: body is not defined
 Error: ReferenceError: body is not defined
 2025-01-02T13:42:09.243Z [error]: body is not defined:
 Error: ReferenceError: body is not defined
+2025-01-03T05:26:44.138Z [error]: _ is not defined:
+Error: ReferenceError: _ is not defined
+2025-01-03T10:05:18.495Z [error]: validateUserEmail is not defined:
+Error: ReferenceError: validateUserEmail is not defined
+2025-01-03T10:09:01.222Z [error]: No recipients defined:
+Error: Error: No recipients defined
+2025-01-03T10:10:16.996Z [error]: No recipients defined:
+Error: Error: No recipients defined
+2025-01-03T10:10:59.217Z [error]: No recipients defined:
+Error: Error: No recipients defined
+2025-01-03T12:03:43.258Z [error]: sentOTP is not defined:
+Error: ReferenceError: sentOTP is not defined
+2025-01-07T11:46:37.371Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-07T11:46:38.415Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-07T11:46:40.440Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-07T11:47:11.242Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-07T11:47:16.617Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-07T11:47:20.696Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-08T07:11:10.402Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-08T07:11:12.426Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-08T07:11:16.445Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-08T07:13:06.233Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-08T07:13:14.859Z [error]: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle:
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle
+2025-01-08T07:13:18.968Z [error]: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle:
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle
+2025-01-08T07:13:31.770Z [error]: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle:
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle
+2025-01-08T07:13:37.486Z [error]: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle:
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle
+2025-01-08T07:13:41.473Z [error]: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle:
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle
+2025-01-08T07:13:54.181Z [error]: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle:
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle
+2025-01-08T07:13:56.249Z [error]: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle:
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle
+2025-01-08T07:13:57.418Z [error]: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle:
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle
+2025-01-08T07:14:01.261Z [error]: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle:
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Timeout'
+    |     property '_idlePrev' -> object with constructor 'TimersList'
+    --- property '_idleNext' closes the circle
+2025-01-08T09:58:26.862Z [error]: onlyAvaiable is not defined:
+Error: ReferenceError: onlyAvaiable is not defined
+2025-01-08T09:58:28.876Z [error]: onlyAvaiable is not defined:
+Error: ReferenceError: onlyAvaiable is not defined
+2025-01-08T09:58:32.902Z [error]: onlyAvaiable is not defined:
+Error: ReferenceError: onlyAvaiable is not defined
+2025-01-08T09:58:46.113Z [error]: onlyAvaiable is not defined:
+Error: ReferenceError: onlyAvaiable is not defined
+2025-01-08T11:37:56.479Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-08T11:38:21.109Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-08T11:44:42.593Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-08T11:45:16.507Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-08T11:46:49.778Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-08T12:01:12.409Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-08T12:01:41.581Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-08T13:09:56.731Z [error]: unknown top level operator: $eq. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.:
+Error: MongoServerError: unknown top level operator: $eq. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+2025-01-08T13:09:57.761Z [error]: unknown top level operator: $eq. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.:
+Error: MongoServerError: unknown top level operator: $eq. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+2025-01-08T13:09:59.783Z [error]: unknown top level operator: $eq. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.:
+Error: MongoServerError: unknown top level operator: $eq. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.
+2025-01-08T14:01:49.968Z [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "requestsborrows"
+2025-01-08T14:14:49.534Z [error]: Cast to Embedded failed for value "0" (type number) at path "student" for model "requestsborrows":
+Error: CastError: Cast to Embedded failed for value "0" (type number) at path "student" for model "requestsborrows"
+2025-01-08T14:14:51.564Z [error]: Cast to Embedded failed for value "0" (type number) at path "student" for model "requestsborrows":
+Error: CastError: Cast to Embedded failed for value "0" (type number) at path "student" for model "requestsborrows"
+2025-01-08T14:15:21.737Z [error]: Cast to Embedded failed for value "0" (type number) at path "student" for model "requestsborrows":
+Error: CastError: Cast to Embedded failed for value "0" (type number) at path "student" for model "requestsborrows"

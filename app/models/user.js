@@ -21,7 +21,6 @@ export const userSchema = new mongoose.Schema(
     },
     password: {
       type: String,
-      required: true,
       minlength: 5,
       maxlength: 1024,
     },
@@ -54,7 +53,6 @@ export const userSchema = new mongoose.Schema(
     },
     imageURL: {
       type: String,
-      // required: true,
     },
     otp: {
       type: String,
@@ -98,19 +96,32 @@ export function validateUser(user) {
     name: Joi.string().min(3).max(50).required(),
     email: Joi.string().max(255).required().email(),
     phone: Joi.string().min(3).max(50).required(),
-    password: Joi.string().min(5).max(50).required(),
-    imageURL: Joi.string(),
   };
 
   return Joi.object(schema).validate(user);
 }
 
-export function validateUserOtp(userId) {
+export function validateUserOtp(userOTP) {
   const schema = {
     otp: Joi.string().min(6).max(10).required(),
   };
 
-  return Joi.object(schema).validate(userId);
+  return Joi.object(schema).validate(userOTP);
+}
+export function validateUserEmail(userEmail) {
+  const schema = {
+    email: Joi.string().max(255).required().email(),
+  };
+
+  return Joi.object(schema).validate(userEmail);
+}
+
+export function validateUserPassword(userPassword) {
+  const schema = {
+    password: Joi.string().min(8).max(255).required(),
+  };
+
+  return Joi.object(schema).validate(userPassword);
 }
 
 export default User;
