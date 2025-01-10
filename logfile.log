@@ -1056,3 +1056,73 @@ Stack Trace: ValidationError: book validation failed: returnableBooks: Path `ret
     at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
     at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
     at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-09T05:33:09.424Z [error]: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-09T05:33:13.458Z [error]: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-09T05:33:34.471Z [error]: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-09T05:34:03.873Z [error]: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-09T05:34:04.708Z [error]: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-09T05:34:08.142Z [error]: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-09T11:54:16.071Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-09T11:54:17.101Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-09T11:54:19.120Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-09T11:54:23.142Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-09T11:54:25.943Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-09T11:54:46.290Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-10T04:33:51.956Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:33:52.977Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:33:54.993Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:33:56.014Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:33:57.048Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:33:59.072Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:34:03.095Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:34:06.209Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:34:07.342Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:34:09.363Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined
+2025-01-10T04:34:13.388Z [error]: BorrowBook is not defined:
+Error: ReferenceError: BorrowBook is not defined

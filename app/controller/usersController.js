@@ -13,18 +13,56 @@ export async function getCurrentUser(req) {
   return await User.findById(req.user._id).select("-password");
 }
 
-export async function getStudent(id) {
-  if (id) {
-    let user = await User.findOne({ _id: id, role: "student" })
+export async function getStudent(req) {
+  if (req?.params.id) {
+    let user = await User.findOne({ _id: req.params.id, role: "student" })
       .sort("name")
       .select("-password");
     if (!user)
       return { status: 404, body: "The User with Given ID was not found" };
     return { status: 200, body: user };
   } else {
-    return await User.find({ role: "student" })
-      .sort("name")
-      .select("-password");
+    if (req?.query.studentWithBorrowed) {
+      return await User.aggregate([
+        { $match: { returnableBooks: { $gt: 0 } } },
+        {
+          $project: {
+            requestBorrows: 0,
+            password: 0,
+            role: 0,
+            createdAt: 0,
+            updatedAt: 0,
+            __v: 0,
+            isVarified: 0,
+            otp: 0,
+          },
+        },
+        {
+          $lookup: {
+            from: "requestsborrows",
+            localField: "_id",
+            foreignField: "student._id",
+            as: "borrows",
+            pipeline: [
+              { $match: { isReturned: false, isApproved: true } },
+              {
+                $project: {
+                  _id: 0,
+                  studentId: "$student._id",
+                  studentName: "$student.name",
+                  studentPhone: "$student.phone",
+                  studentImage: "$student.imageURL",
+                },
+              },
+            ],
+          },
+        },
+      ]);
+    } else {
+      return await User.find({ role: "student" })
+        .sort("name")
+        .select("-password");
+    }
   }
 }
 

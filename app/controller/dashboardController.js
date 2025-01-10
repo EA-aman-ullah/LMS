@@ -37,7 +37,7 @@ export async function getOverview(req) {
     });
     Overview.push({ title: "Active Borrowed Books", value: borrowBooks });
   } else {
-    let borrowBooks = await BorrowBook.countDocuments({
+    let borrowBooks = await RequestsBorrows.countDocuments({
       "student._id": req.user._id,
       isApproved: true,
       isReturned: false,

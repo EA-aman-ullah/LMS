@@ -51,13 +51,13 @@ export async function getBorrows(req) {
       return await RequestsBorrows.find({
         isApproved: true,
         isReturned: false,
-      }).sort("book.name");
+      }).sort({ isAssigned: 1 });
     } else {
       return await RequestsBorrows.find({
         "student._id": req.user._id,
         isApproved: true,
         isReturned: false,
-      }).sort("book.name");
+      }).sort({ isAssigned: 1 });
     }
   }
 }
@@ -181,7 +181,7 @@ export async function assignBorrow(id) {
     {
       isAssigned: true,
       dateAssign: Date.now(),
-      dateReturn: new Date(new Date().setDate(new Date().getDate() + 10)),
+      dateReturn: new Date(new Date().setDate(new Date().getDate() + 30)),
     },
     { new: true }
   );

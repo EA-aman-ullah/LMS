@@ -24,9 +24,16 @@ users.get("/students", [auth, managment], async (req, res) => {
   const students = await getStudent();
   res.send(students);
 });
+
 users.get("/students/:id", [auth, managment], async (req, res) => {
-  const { status, body } = await getStudent(req.params.id);
+  const { status, body } = await getStudent(req);
   res.status(status).send(body);
+});
+
+users.get("/students-with-borrowed", [auth, managment], async (req, res) => {
+  req.query.studentWithBorrowed = true;
+  const students = await getStudent(req);
+  res.send(students);
 });
 
 users.post("/register", async (req, res) => {
