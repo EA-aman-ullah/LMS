@@ -48,12 +48,14 @@ export async function getBorrows(req) {
     } else return { status: 200, body: borrow };
   } else {
     if (req.user.role !== "student") {
-      return await RequestsBorrows.find({ isReturned: false }).sort(
-        "book.name"
-      );
+      return await RequestsBorrows.find({
+        isApproved: true,
+        isReturned: false,
+      }).sort("book.name");
     } else {
       return await RequestsBorrows.find({
         "student._id": req.user._id,
+        isApproved: true,
         isReturned: false,
       }).sort("book.name");
     }
@@ -89,6 +91,7 @@ export async function createRequest(req) {
 
   let borrowQuantity = await RequestsBorrows.countDocuments({
     "student._id": req.user._id,
+    isApproved: false,
   });
   if (borrowQuantity > 5)
     return { status: 400, body: "The limit has been completed" };
