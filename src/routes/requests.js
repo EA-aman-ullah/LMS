@@ -1,8 +1,10 @@
 import express from "express";
 import {
+  assignBorrow,
   createRequest,
   deleteRequest,
   getRequests,
+  returnBorrow,
   updeteRequest,
 } from "../controller/requestsBorrowsController.js";
 import auth from "../middleware/auth.js";
@@ -11,7 +13,16 @@ import admin from "../middleware/admin.js";
 
 const requests = express.Router();
 
-requests.get("/", auth, async (req, res) => {
+requests.get("/approve", auth, async (req, res) => {
+  const { status, body } = await getRequests(req);
+  res.status(status).send(body);
+});
+
+requests.get("/assign", auth, async (req, res) => {
+  const { status, body } = await getRequests(req);
+  res.status(status).send(body);
+});
+requests.get("/return", auth, async (req, res) => {
   const { status, body } = await getRequests(req);
   res.status(status).send(body);
 });
@@ -26,8 +37,18 @@ requests.post("/", auth, async (req, res) => {
   res.status(status).send(body);
 });
 
-requests.put("/:id", [auth, managment], async (req, res) => {
+requests.put("/approve/:id", [auth, managment], async (req, res) => {
   const { status, body } = await updeteRequest(req.params.id);
+  res.status(status).send(body);
+});
+
+requests.put("/assign/:id", [auth, managment], async (req, res) => {
+  const { status, body } = await assignBorrow(req.params.id);
+  res.status(status).send(body);
+});
+
+requests.put("/return/:id", [auth, managment], async (req, res) => {
+  const { status, body } = await returnBorrow(req);
   res.status(status).send(body);
 });
 

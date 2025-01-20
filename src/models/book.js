@@ -76,7 +76,7 @@ bookSchema.pre("validate", async function (next) {
   next();
 });
 
-const Book = mongoose.model("book", bookSchema);
+const Book = mongoose.model("Book", bookSchema);
 
 export function validateBook(book) {
   const schema = {

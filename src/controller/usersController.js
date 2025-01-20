@@ -8,6 +8,7 @@ import bcrypt from "bcrypt";
 import _ from "lodash";
 import { sendOTP } from "../utils/otp.js";
 import RequestsBorrows from "../models/requestsBorrows.js";
+import { pagination } from "../utils/pagination.js";
 
 export async function getCurrentUser(req) {
   return await User.findById(req.user._id).select("-password");
@@ -23,7 +24,7 @@ export async function getStudent(req) {
     return { status: 200, body: user };
   } else {
     if (req?.query.studentWithBorrowed) {
-      return await User.aggregate([
+      let result = await pagination(User, req.query, undefined, [
         { $match: { returnableBooks: { $gt: 0 } } },
         {
           $project: {
@@ -41,23 +42,62 @@ export async function getStudent(req) {
           $lookup: {
             from: "requestsborrows",
             localField: "_id",
-            foreignField: "student._id",
+            foreignField: "user",
             as: "borrows",
             pipeline: [
-              { $match: { isReturned: false, isApproved: true } },
+              { $match: { isReturned: false, isAssigned: true } },
               {
                 $project: {
-                  _id: 0,
-                  studentId: "$student._id",
-                  studentName: "$student.name",
-                  studentPhone: "$student.phone",
-                  studentImage: "$student.imageURL",
+                  bookId: "$book",
+                  dateBorrow: "$dateAssign",
+                  dateReturn: "$dateReturn",
+                },
+              },
+              {
+                $lookup: {
+                  from: "books",
+                  localField: "bookId",
+                  foreignField: "_id",
+                  as: "bookDetails",
+                },
+              },
+              {
+                $addFields: {
+                  bookDetails: { $arrayElemAt: ["$bookDetails", 0] },
+                },
+              },
+              {
+                $replaceRoot: {
+                  newRoot: { $mergeObjects: ["$$ROOT", "$bookDetails"] },
+                },
+              },
+              {
+                $project: {
+                  bookDetails: 0,
+                  description: 0,
+                  numberInStock: 0,
+                  createdAt: 0,
+                  updatedAt: 0,
+                  returnableBooks: 0,
+                  reservedNumber: 0,
+                  bookId: 0,
                 },
               },
             ],
           },
         },
       ]);
+
+      result.result?.forEach((el, index) => {
+        let overdueBooks = [];
+        el.borrows.forEach((el) => {
+          let dateReturn = el.dateReturn.getTime();
+          if (dateReturn < Date.now()) overdueBooks.push(el);
+        });
+        result.result[index].overdueBooks = overdueBooks;
+      });
+
+      return { status: 200, body: result };
     } else {
       return await User.find({ role: "student" })
         .sort("name")
@@ -88,6 +128,17 @@ export async function createUser(req) {
     header: token,
     body: _.pick(user, ["_id", "name", "email", "phone", "imageURL"]),
   };
+}
+
+export async function updateUseAvatar(req) {
+  const user = await User.findById(req.body.id);
+  if (!user) return { status: 404, body: "User on given id was not found" };
+
+  user.imageURL = req.body.imageURL;
+
+  await user.save();
+
+  return { status: 201, body: { imageURL: user.imageURL } };
 }
 
 export async function sendOtpOnregister(req) {
@@ -196,13 +247,10 @@ export async function setPassword(req) {
 }
 
 export async function getUserOpenRequests(req) {
-  const requests = await RequestsBorrows.find(
-    {
-      "student._id": req.params.id,
-      isReturned: false,
-    },
-    { student: 0 }
-  );
+  const requests = await RequestsBorrows.find({
+    user: req.params.id,
+    isReturned: false,
+  });
 
   return { status: 201, body: requests };
 }

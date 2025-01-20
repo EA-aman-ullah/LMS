@@ -6,12 +6,11 @@ import books from "./books.js";
 import auth from "./auth.js";
 import requests from "./requests.js";
 import dashboard from "./dasboard.js";
-import borrows from "./borrows.js";
 
 export default function (app) {
   app.use(
     cors({
-      origin: "http://localhost:5173",
+      origin: process.env.ORIGIN,
       allowedHeaders: ["Authorization", "Content-Type"],
       exposedHeaders: ["Authorization"],
     })
@@ -21,7 +20,6 @@ export default function (app) {
   app.use("/api/dashboard", dashboard);
   app.use("/api/users", users);
   app.use("/api/books", books);
-  app.use("/api/borrows", borrows);
   app.use("/api/requests", requests);
   app.use("/api/auth", auth);
   app.use(error);

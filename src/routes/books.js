@@ -3,6 +3,7 @@ import {
   createBook,
   deletBook,
   getBooks,
+  getBorrowedBooks,
   updateBook,
 } from "../controller/booksController.js";
 import auth from "../middleware/auth.js";
@@ -14,6 +15,11 @@ const books = express.Router();
 
 books.get("/", async (req, res) => {
   const { status, body } = await getBooks(req);
+  res.status(status).send(body);
+});
+
+books.get("/borrowed-books", [auth, managment], async (req, res) => {
+  let { status, body } = await getBorrowedBooks(req);
   res.status(status).send(body);
 });
 

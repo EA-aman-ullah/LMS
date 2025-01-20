@@ -1,6 +1,4 @@
-import config from "config";
-
 export default function () {
-  if (!config.get("jwtPrivateKey"))
+  if (!process.env.LMS_JWT_PRIVATE_KEY)
     throw new Error("FATAL ERROR: jwtPrivateKey is not defined");
 }

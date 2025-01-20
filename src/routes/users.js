@@ -7,6 +7,7 @@ import {
   sendOtpOnregister,
   sentOtpOnforgetPassword,
   setPassword,
+  updateUseAvatar,
   verifyOTP,
 } from "../controller/usersController.js";
 import auth from "../middleware/auth.js";
@@ -32,12 +33,17 @@ users.get("/students/:id", [auth, managment], async (req, res) => {
 
 users.get("/students-with-borrowed", [auth, managment], async (req, res) => {
   req.query.studentWithBorrowed = true;
-  const students = await getStudent(req);
-  res.send(students);
+  const { status, body } = await getStudent(req);
+  res.status(status).send(body);
 });
 
 users.post("/register", async (req, res) => {
   const { status, body } = await sendOtpOnregister(req);
+  res.status(status).send(body);
+});
+
+users.post("/upload-avatar", handleImage, async (req, res) => {
+  const { status, body } = await updateUseAvatar(req);
   res.status(status).send(body);
 });
 

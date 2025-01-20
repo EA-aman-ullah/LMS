@@ -1126,3 +1126,355 @@ Error: ReferenceError: BorrowBook is not defined
 Error: ReferenceError: BorrowBook is not defined
 2025-01-10T04:34:13.388Z [error]: BorrowBook is not defined:
 Error: ReferenceError: BorrowBook is not defined
+2025-01-13T05:28:01.771Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:28:03.796Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:28:25.891Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:28:34.821Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:28:41.848Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:29:17.333Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:29:22.892Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:29:24.880Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:29:25.944Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:29:48.725Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:44:31.669Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:44:48.331Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:44:49.398Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:44:50.716Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T05:46:47.099Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-13T12:50:32.012Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:50:33.048Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:50:35.063Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:50:39.090Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:50:42.289Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:52:44.346Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:52:50.441Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:52:51.505Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:52:53.530Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:54:03.162Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:54:35.629Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:54:48.178Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:56:03.651Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:56:32.924Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:57:12.637Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:57:14.682Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:57:22.116Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T12:57:25.824Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:02:26.475Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:02:27.508Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:02:29.543Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:02:43.743Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:03:25.951Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:03:25.957Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:03:26.989Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:03:29.018Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:03:33.320Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:04:45.935Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:04:57.228Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:04:59.254Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:05:44.714Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:05:52.704Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:05:53.782Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:05:55.822Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:05:59.844Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:06:38.204Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:07:35.186Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:07:41.539Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:07:43.567Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:08:31.675Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:08:33.820Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:11:53.030Z [error]: input must be a 24 character hex string, 12 byte Uint8Array, or an integer:
+Error: BSONError: input must be a 24 character hex string, 12 byte Uint8Array, or an integer
+2025-01-13T13:12:27.346Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-13T13:13:24.104Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-13T13:13:29.784Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-13T13:13:50.049Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-13T13:13:56.181Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-13T13:15:36.687Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-14T05:03:31.999Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-14T05:03:36.305Z [error]: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-14T09:55:34.802Z [error]: hasNextPage is not defined:
+Error: ReferenceError: hasNextPage is not defined
+2025-01-14T09:55:35.839Z [error]: hasNextPage is not defined:
+Error: ReferenceError: hasNextPage is not defined
+2025-01-14T09:55:37.860Z [error]: hasNextPage is not defined:
+Error: ReferenceError: hasNextPage is not defined
+2025-01-14T09:55:41.888Z [error]: hasNextPage is not defined:
+Error: ReferenceError: hasNextPage is not defined
+2025-01-15T06:00:28.486Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-15T06:00:29.611Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-15T06:00:31.846Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-15T06:00:35.870Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-15T06:02:12.391Z [error]: Cannot read properties of undefined (reading 'query'):
+Error: TypeError: Cannot read properties of undefined (reading 'query')
+2025-01-15T06:02:17.742Z [error]: Cannot access 'totalPages' before initialization:
+Error: ReferenceError: Cannot access 'totalPages' before initialization
+2025-01-15T06:02:19.777Z [error]: Cannot access 'totalPages' before initialization:
+Error: ReferenceError: Cannot access 'totalPages' before initialization
+2025-01-15T06:04:34.633Z [error]: Cannot access 'totalPages' before initialization:
+Error: ReferenceError: Cannot access 'totalPages' before initialization
+2025-01-15T07:39:59.624Z [error]: Cannot read properties of undefined (reading '_id'):
+Error: TypeError: Cannot read properties of undefined (reading '_id')
+2025-01-15T07:43:13.910Z [error]: Cannot read properties of undefined (reading '_id'):
+Error: TypeError: Cannot read properties of undefined (reading '_id')
+2025-01-15T07:44:58.524Z [error]: Cannot read properties of undefined (reading '_id'):
+Error: TypeError: Cannot read properties of undefined (reading '_id')
+2025-01-16T16:07:06.953Z [error]: Cannot read properties of undefined (reading '_id'):
+Error: TypeError: Cannot read properties of undefined (reading '_id')
+2025-01-16T16:08:26.515Z [error]: Cannot read properties of undefined (reading '_id'):
+Error: TypeError: Cannot read properties of undefined (reading '_id')
+2025-01-16T16:09:42.937Z [error]: Cannot read properties of undefined (reading '_id'):
+Error: TypeError: Cannot read properties of undefined (reading '_id')
+2025-01-16T16:34:43.092Z [error]: Cannot read properties of undefined (reading '_id'):
+Error: TypeError: Cannot read properties of undefined (reading '_id')
+2025-01-16T16:44:12.296Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:44:13.337Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:44:15.379Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:45:29.745Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:45:32.519Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:45:33.553Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:45:35.575Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:46:45.504Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:51:04.302Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:51:05.342Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:51:06.643Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:51:07.680Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:51:07.792Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:51:08.819Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:51:10.868Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:51:27.633Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:51:41.084Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:53:42.539Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:53:45.127Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T16:58:23.837Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:58:35.577Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:58:36.616Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:58:39.967Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:59:02.911Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:59:05.824Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:59:07.762Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:59:26.522Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:59:46.637Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:59:53.102Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T16:59:59.215Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T17:00:01.265Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T17:00:05.303Z [error]: Cannot read properties of undefined (reading 'forEach'):
+Error: TypeError: Cannot read properties of undefined (reading 'forEach')
+2025-01-16T17:07:17.634Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T17:07:18.676Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T17:07:43.231Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T17:10:11.961Z [error]: must specify 'as' field for a $lookup:
+Error: MongoServerError: must specify 'as' field for a $lookup
+2025-01-16T17:10:12.996Z [error]: must specify 'as' field for a $lookup:
+Error: MongoServerError: must specify 'as' field for a $lookup
+2025-01-16T17:10:15.073Z [error]: must specify 'as' field for a $lookup:
+Error: MongoServerError: must specify 'as' field for a $lookup
+2025-01-16T17:18:27.635Z [error]: must specify 'as' field for a $lookup:
+Error: MongoServerError: must specify 'as' field for a $lookup
+2025-01-16T17:38:17.847Z [error]: el.borrows.forEach is not a function:
+Error: TypeError: el.borrows.forEach is not a function
+2025-01-16T17:38:18.956Z [error]: el.borrows.forEach is not a function:
+Error: TypeError: el.borrows.forEach is not a function
+2025-01-16T17:38:21.032Z [error]: el.borrows.forEach is not a function:
+Error: TypeError: el.borrows.forEach is not a function
+2025-01-16T17:38:32.474Z [error]: el.borrows.forEach is not a function:
+Error: TypeError: el.borrows.forEach is not a function
+2025-01-16T18:00:49.491Z [error]: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 677bb3da8a26fbdf36fef829, name: "Haqeeqat-e-Islam", autherName: "Syed Maududi ", description: "Haqeeqat-e-Islam is a profound book written by Maulana Abul Ala Maududi, a renowned Islamic scholar and thinker. The book delves deeply into the essence of Islam, presenting it as a comprehensive way of life rather than just a set of rituals or beliefs. Maududi emphasizes the universality and relevance of Islamic principles, addressing various aspects of human existence, including social justice, morality, and governance.
+
+He dismantles misconceptions about Islam and highlights its logical and spiritual foundations. With a clear, reasoned approach, the book appeals to both intellectuals and lay readers, aiming to reconnect Muslims with the core teachings of their faith.
+
+Maulana Maududi, the founder of Jamaat-e-Islami, was instrumental in reviving Islamic thought in the modern era. His works, including Haqeeqat-e-Islam, continue to inspire and guide readers in understanding the holistic message of Islam", location: "Test Loaction", numberInStock: 9, returnableBooks: 1, reservedNumber: 0, imageURL: "http://localhost:3000/temp/1736160218895-0.5308173723511722.webp", bookId: "AA2024BKD000190", createdAt: 2025-01-06T10:43:38.969Z, updatedAt: 2025-01-16T16:36:52.504Z, __v: 0, language: "Urdu"}] is of type array:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 677bb3da8a26fbdf36fef829, name: "Haqeeqat-e-Islam", autherName: "Syed Maududi ", description: "Haqeeqat-e-Islam is a profound book written by Maulana Abul Ala Maududi, a renowned Islamic scholar and thinker. The book delves deeply into the essence of Islam, presenting it as a comprehensive way of life rather than just a set of rituals or beliefs. Maududi emphasizes the universality and relevance of Islamic principles, addressing various aspects of human existence, including social justice, morality, and governance.
+
+He dismantles misconceptions about Islam and highlights its logical and spiritual foundations. With a clear, reasoned approach, the book appeals to both intellectuals and lay readers, aiming to reconnect Muslims with the core teachings of their faith.
+
+Maulana Maududi, the founder of Jamaat-e-Islami, was instrumental in reviving Islamic thought in the modern era. His works, including Haqeeqat-e-Islam, continue to inspire and guide readers in understanding the holistic message of Islam", location: "Test Loaction", numberInStock: 9, returnableBooks: 1, reservedNumber: 0, imageURL: "http://localhost:3000/temp/1736160218895-0.5308173723511722.webp", bookId: "AA2024BKD000190", createdAt: 2025-01-06T10:43:38.969Z, updatedAt: 2025-01-16T16:36:52.504Z, __v: 0, language: "Urdu"}] is of type array
+2025-01-16T18:00:50.547Z [error]: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 677bb3da8a26fbdf36fef829, name: "Haqeeqat-e-Islam", autherName: "Syed Maududi ", description: "Haqeeqat-e-Islam is a profound book written by Maulana Abul Ala Maududi, a renowned Islamic scholar and thinker. The book delves deeply into the essence of Islam, presenting it as a comprehensive way of life rather than just a set of rituals or beliefs. Maududi emphasizes the universality and relevance of Islamic principles, addressing various aspects of human existence, including social justice, morality, and governance.
+
+He dismantles misconceptions about Islam and highlights its logical and spiritual foundations. With a clear, reasoned approach, the book appeals to both intellectuals and lay readers, aiming to reconnect Muslims with the core teachings of their faith.
+
+Maulana Maududi, the founder of Jamaat-e-Islami, was instrumental in reviving Islamic thought in the modern era. His works, including Haqeeqat-e-Islam, continue to inspire and guide readers in understanding the holistic message of Islam", location: "Test Loaction", numberInStock: 9, returnableBooks: 1, reservedNumber: 0, imageURL: "http://localhost:3000/temp/1736160218895-0.5308173723511722.webp", bookId: "AA2024BKD000190", createdAt: 2025-01-06T10:43:38.969Z, updatedAt: 2025-01-16T16:36:52.504Z, __v: 0, language: "Urdu"}] is of type array:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 677bb3da8a26fbdf36fef829, name: "Haqeeqat-e-Islam", autherName: "Syed Maududi ", description: "Haqeeqat-e-Islam is a profound book written by Maulana Abul Ala Maududi, a renowned Islamic scholar and thinker. The book delves deeply into the essence of Islam, presenting it as a comprehensive way of life rather than just a set of rituals or beliefs. Maududi emphasizes the universality and relevance of Islamic principles, addressing various aspects of human existence, including social justice, morality, and governance.
+
+He dismantles misconceptions about Islam and highlights its logical and spiritual foundations. With a clear, reasoned approach, the book appeals to both intellectuals and lay readers, aiming to reconnect Muslims with the core teachings of their faith.
+
+Maulana Maududi, the founder of Jamaat-e-Islami, was instrumental in reviving Islamic thought in the modern era. His works, including Haqeeqat-e-Islam, continue to inspire and guide readers in understanding the holistic message of Islam", location: "Test Loaction", numberInStock: 9, returnableBooks: 1, reservedNumber: 0, imageURL: "http://localhost:3000/temp/1736160218895-0.5308173723511722.webp", bookId: "AA2024BKD000190", createdAt: 2025-01-06T10:43:38.969Z, updatedAt: 2025-01-16T16:36:52.504Z, __v: 0, language: "Urdu"}] is of type array
+2025-01-16T18:00:52.593Z [error]: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 677bb3da8a26fbdf36fef829, name: "Haqeeqat-e-Islam", autherName: "Syed Maududi ", description: "Haqeeqat-e-Islam is a profound book written by Maulana Abul Ala Maududi, a renowned Islamic scholar and thinker. The book delves deeply into the essence of Islam, presenting it as a comprehensive way of life rather than just a set of rituals or beliefs. Maududi emphasizes the universality and relevance of Islamic principles, addressing various aspects of human existence, including social justice, morality, and governance.
+
+He dismantles misconceptions about Islam and highlights its logical and spiritual foundations. With a clear, reasoned approach, the book appeals to both intellectuals and lay readers, aiming to reconnect Muslims with the core teachings of their faith.
+
+Maulana Maududi, the founder of Jamaat-e-Islami, was instrumental in reviving Islamic thought in the modern era. His works, including Haqeeqat-e-Islam, continue to inspire and guide readers in understanding the holistic message of Islam", location: "Test Loaction", numberInStock: 9, returnableBooks: 1, reservedNumber: 0, imageURL: "http://localhost:3000/temp/1736160218895-0.5308173723511722.webp", bookId: "AA2024BKD000190", createdAt: 2025-01-06T10:43:38.969Z, updatedAt: 2025-01-16T16:36:52.504Z, __v: 0, language: "Urdu"}] is of type array:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 677bb3da8a26fbdf36fef829, name: "Haqeeqat-e-Islam", autherName: "Syed Maududi ", description: "Haqeeqat-e-Islam is a profound book written by Maulana Abul Ala Maududi, a renowned Islamic scholar and thinker. The book delves deeply into the essence of Islam, presenting it as a comprehensive way of life rather than just a set of rituals or beliefs. Maududi emphasizes the universality and relevance of Islamic principles, addressing various aspects of human existence, including social justice, morality, and governance.
+
+He dismantles misconceptions about Islam and highlights its logical and spiritual foundations. With a clear, reasoned approach, the book appeals to both intellectuals and lay readers, aiming to reconnect Muslims with the core teachings of their faith.
+
+Maulana Maududi, the founder of Jamaat-e-Islami, was instrumental in reviving Islamic thought in the modern era. His works, including Haqeeqat-e-Islam, continue to inspire and guide readers in understanding the holistic message of Islam", location: "Test Loaction", numberInStock: 9, returnableBooks: 1, reservedNumber: 0, imageURL: "http://localhost:3000/temp/1736160218895-0.5308173723511722.webp", bookId: "AA2024BKD000190", createdAt: 2025-01-06T10:43:38.969Z, updatedAt: 2025-01-16T16:36:52.504Z, __v: 0, language: "Urdu"}] is of type array
+2025-01-16T18:01:15.331Z [error]: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 677bb3da8a26fbdf36fef829, name: "Haqeeqat-e-Islam", autherName: "Syed Maududi ", description: "Haqeeqat-e-Islam is a profound book written by Maulana Abul Ala Maududi, a renowned Islamic scholar and thinker. The book delves deeply into the essence of Islam, presenting it as a comprehensive way of life rather than just a set of rituals or beliefs. Maududi emphasizes the universality and relevance of Islamic principles, addressing various aspects of human existence, including social justice, morality, and governance.
+
+He dismantles misconceptions about Islam and highlights its logical and spiritual foundations. With a clear, reasoned approach, the book appeals to both intellectuals and lay readers, aiming to reconnect Muslims with the core teachings of their faith.
+
+Maulana Maududi, the founder of Jamaat-e-Islami, was instrumental in reviving Islamic thought in the modern era. His works, including Haqeeqat-e-Islam, continue to inspire and guide readers in understanding the holistic message of Islam", location: "Test Loaction", numberInStock: 9, returnableBooks: 1, reservedNumber: 0, imageURL: "http://localhost:3000/temp/1736160218895-0.5308173723511722.webp", bookId: "AA2024BKD000190", createdAt: 2025-01-06T10:43:38.969Z, updatedAt: 2025-01-16T16:36:52.504Z, __v: 0, language: "Urdu"}] is of type array:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 677bb3da8a26fbdf36fef829, name: "Haqeeqat-e-Islam", autherName: "Syed Maududi ", description: "Haqeeqat-e-Islam is a profound book written by Maulana Abul Ala Maududi, a renowned Islamic scholar and thinker. The book delves deeply into the essence of Islam, presenting it as a comprehensive way of life rather than just a set of rituals or beliefs. Maududi emphasizes the universality and relevance of Islamic principles, addressing various aspects of human existence, including social justice, morality, and governance.
+
+He dismantles misconceptions about Islam and highlights its logical and spiritual foundations. With a clear, reasoned approach, the book appeals to both intellectuals and lay readers, aiming to reconnect Muslims with the core teachings of their faith.
+
+Maulana Maududi, the founder of Jamaat-e-Islami, was instrumental in reviving Islamic thought in the modern era. His works, including Haqeeqat-e-Islam, continue to inspire and guide readers in understanding the holistic message of Islam", location: "Test Loaction", numberInStock: 9, returnableBooks: 1, reservedNumber: 0, imageURL: "http://localhost:3000/temp/1736160218895-0.5308173723511722.webp", bookId: "AA2024BKD000190", createdAt: 2025-01-06T10:43:38.969Z, updatedAt: 2025-01-16T16:36:52.504Z, __v: 0, language: "Urdu"}] is of type array
+2025-01-16T18:14:22.617Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T18:14:23.705Z [error]: Cannot read properties of undefined (reading 'getTime'):
+Error: TypeError: Cannot read properties of undefined (reading 'getTime')
+2025-01-16T18:30:44.425Z [error]: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 676d410ce0a213af1ba3e549, name: "Admin", email: "admin@gmail.com", password: "$2b$10$k9F.zgXVwAey.TfKe/DFP.v2NT6rpxwKDOuch4/fjaO9peiQ5Kx7S", phone: "0305529195", returnableBooks: 2, requestBorrows: 0, role: "admin", imageURL: "http://localhost:3000/temp/1737027797831-0.9468761871553468.png", studentId: "AA2024STD000109", createdAt: 2024-12-26T11:42:04.830Z, updatedAt: 2025-01-16T16:36:53.317Z, __v: 0, isVarified: true, otp: "112584", requestApproved: 0, requestPending: 15}] is of type array:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 676d410ce0a213af1ba3e549, name: "Admin", email: "admin@gmail.com", password: "$2b$10$k9F.zgXVwAey.TfKe/DFP.v2NT6rpxwKDOuch4/fjaO9peiQ5Kx7S", phone: "0305529195", returnableBooks: 2, requestBorrows: 0, role: "admin", imageURL: "http://localhost:3000/temp/1737027797831-0.9468761871553468.png", studentId: "AA2024STD000109", createdAt: 2024-12-26T11:42:04.830Z, updatedAt: 2025-01-16T16:36:53.317Z, __v: 0, isVarified: true, otp: "112584", requestApproved: 0, requestPending: 15}] is of type array
+2025-01-16T18:30:45.499Z [error]: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 676d410ce0a213af1ba3e549, name: "Admin", email: "admin@gmail.com", password: "$2b$10$k9F.zgXVwAey.TfKe/DFP.v2NT6rpxwKDOuch4/fjaO9peiQ5Kx7S", phone: "0305529195", returnableBooks: 2, requestBorrows: 0, role: "admin", imageURL: "http://localhost:3000/temp/1737027797831-0.9468761871553468.png", studentId: "AA2024STD000109", createdAt: 2024-12-26T11:42:04.830Z, updatedAt: 2025-01-16T16:36:53.317Z, __v: 0, isVarified: true, otp: "112584", requestApproved: 0, requestPending: 15}] is of type array:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 676d410ce0a213af1ba3e549, name: "Admin", email: "admin@gmail.com", password: "$2b$10$k9F.zgXVwAey.TfKe/DFP.v2NT6rpxwKDOuch4/fjaO9peiQ5Kx7S", phone: "0305529195", returnableBooks: 2, requestBorrows: 0, role: "admin", imageURL: "http://localhost:3000/temp/1737027797831-0.9468761871553468.png", studentId: "AA2024STD000109", createdAt: 2024-12-26T11:42:04.830Z, updatedAt: 2025-01-16T16:36:53.317Z, __v: 0, isVarified: true, otp: "112584", requestApproved: 0, requestPending: 15}] is of type array
+2025-01-16T18:30:47.562Z [error]: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 676d410ce0a213af1ba3e549, name: "Admin", email: "admin@gmail.com", password: "$2b$10$k9F.zgXVwAey.TfKe/DFP.v2NT6rpxwKDOuch4/fjaO9peiQ5Kx7S", phone: "0305529195", returnableBooks: 2, requestBorrows: 0, role: "admin", imageURL: "http://localhost:3000/temp/1737027797831-0.9468761871553468.png", studentId: "AA2024STD000109", createdAt: 2024-12-26T11:42:04.830Z, updatedAt: 2025-01-16T16:36:53.317Z, __v: 0, isVarified: true, otp: "112584", requestApproved: 0, requestPending: 15}] is of type array:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 676d410ce0a213af1ba3e549, name: "Admin", email: "admin@gmail.com", password: "$2b$10$k9F.zgXVwAey.TfKe/DFP.v2NT6rpxwKDOuch4/fjaO9peiQ5Kx7S", phone: "0305529195", returnableBooks: 2, requestBorrows: 0, role: "admin", imageURL: "http://localhost:3000/temp/1737027797831-0.9468761871553468.png", studentId: "AA2024STD000109", createdAt: 2024-12-26T11:42:04.830Z, updatedAt: 2025-01-16T16:36:53.317Z, __v: 0, isVarified: true, otp: "112584", requestApproved: 0, requestPending: 15}] is of type array
+2025-01-16T18:31:08.907Z [error]: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 676d410ce0a213af1ba3e549, name: "Admin", email: "admin@gmail.com", password: "$2b$10$k9F.zgXVwAey.TfKe/DFP.v2NT6rpxwKDOuch4/fjaO9peiQ5Kx7S", phone: "0305529195", returnableBooks: 2, requestBorrows: 0, role: "admin", imageURL: "http://localhost:3000/temp/1737027797831-0.9468761871553468.png", studentId: "AA2024STD000109", createdAt: 2024-12-26T11:42:04.830Z, updatedAt: 2025-01-16T16:36:53.317Z, __v: 0, isVarified: true, otp: "112584", requestApproved: 0, requestPending: 15}] is of type array:
+Error: MongoServerError: PlanExecutor error during aggregation :: caused by :: $mergeObjects requires object inputs, but input [{_id: 676d410ce0a213af1ba3e549, name: "Admin", email: "admin@gmail.com", password: "$2b$10$k9F.zgXVwAey.TfKe/DFP.v2NT6rpxwKDOuch4/fjaO9peiQ5Kx7S", phone: "0305529195", returnableBooks: 2, requestBorrows: 0, role: "admin", imageURL: "http://localhost:3000/temp/1737027797831-0.9468761871553468.png", studentId: "AA2024STD000109", createdAt: 2024-12-26T11:42:04.830Z, updatedAt: 2025-01-16T16:36:53.317Z, __v: 0, isVarified: true, otp: "112584", requestApproved: 0, requestPending: 15}] is of type array
+2025-01-17T04:58:01.744Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T04:58:02.795Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T04:58:05.969Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T04:58:07.011Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T04:58:09.064Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T05:10:59.526Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T05:28:18.825Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T05:28:21.539Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T05:28:22.579Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T05:29:27.526Z [error]: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.:
+Error: TypeError: Cannot destructure property 'status' of '(intermediate value)' as it is undefined.
+2025-01-17T07:42:08.928Z [error]: Cast to ObjectId failed for value "assign" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "assign" (type string) at path "_id" for model "requestsborrows"
+2025-01-17T07:42:09.949Z [error]: Cast to ObjectId failed for value "assign" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "assign" (type string) at path "_id" for model "requestsborrows"
+2025-01-17T07:42:13.035Z [error]: Cast to ObjectId failed for value "assign" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "assign" (type string) at path "_id" for model "requestsborrows"
+2025-01-17T07:43:04.630Z [error]: Cast to ObjectId failed for value "assign" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "assign" (type string) at path "_id" for model "requestsborrows"
+2025-01-17T09:42:20.039Z [error]: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows"
+2025-01-17T09:42:21.070Z [error]: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows"
+2025-01-17T09:42:23.095Z [error]: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows"
+2025-01-17T09:42:27.110Z [error]: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows"
+2025-01-17T09:44:22.274Z [error]: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows":
+Error: CastError: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows"

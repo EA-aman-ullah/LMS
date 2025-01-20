@@ -1,6 +1,5 @@
 import Joi from "joi";
 import jwt from "jsonwebtoken";
-import config from "config";
 import mongoose from "mongoose";
 
 export const userSchema = new mongoose.Schema(
@@ -39,11 +38,17 @@ export const userSchema = new mongoose.Schema(
     returnableBooks: {
       type: Number,
       default: 0,
+      min: 0,
     },
-    requestBorrows: {
+    requestApproved: {
       type: Number,
       default: 0,
-      required: true,
+      min: 0,
+    },
+    requestPending: {
+      type: Number,
+      default: 0,
+      min: 0,
     },
     role: {
       type: String,
@@ -84,7 +89,7 @@ userSchema.pre("validate", async function (next) {
 userSchema.methods.generateAuthToken = function () {
   const token = jwt.sign(
     { _id: this._id, role: this.role },
-    config.get("jwtPrivateKey")
+    process.env.LMS_JWT_PRIVATE_KEY
   );
   return token;
 };
