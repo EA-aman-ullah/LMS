@@ -4,7 +4,7 @@ export async function pagination(
   additionalFilter = undefined,
   aggregationPipeline = null
 ) {
-  const { search, onlyAvailable, page = 1, limit = 10, sort } = query;
+  const { search, onlyAvailable, page = 1, limit = 10, sort } = { ...query };
 
   const pageNumber = parseInt(page);
   const recordLimit = parseInt(limit);

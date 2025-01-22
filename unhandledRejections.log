@@ -18,3 +18,10 @@ Stack Trace: ParallelSaveError: Can't save() the same doc multiple times in para
     at generateId (file:///D:/Mosh-prectical/backend/LMS/app/utils/generateId.js:65:17)
     at model.<anonymous> (file:///D:/Mosh-prectical/backend/LMS/app/models/user.js:53:24)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-01-21T12:07:24.413Z [error]: unhandledRejection: session is not defined
+ReferenceError: session is not defined
+    at Socket.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/RequestApproveHandler.js:44:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Stack Trace: ReferenceError: session is not defined
+    at Socket.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/RequestApproveHandler.js:44:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

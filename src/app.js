@@ -1,11 +1,12 @@
 import express from "express";
 import http from "http";
 import { Server } from "socket.io";
-import db from "./src/database/db.js";
-import logger from "./src/utils/logging.js";
-import router from "./src/routes/router.js";
-import validation from "./src/utils/validation.js";
-import config from "./src/utils/config.js";
+import db from "./database/db.js";
+import logger from "./utils/logging.js";
+import router from "./routes/router.js";
+import validation from "./utils/validation.js";
+import config from "./utils/config.js";
+import setupSocket from "./sockets/index.js";
 import "dotenv/config";
 
 const app = express();
@@ -17,10 +18,12 @@ const io = new Server(server, {
   },
 });
 
+setupSocket(io);
+
 config();
 db();
 validation();
 router(app);
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => logger.info(`Listening on Port ${port}...`));
+server.listen(port, () => logger.info(`Listening on Port ${port}...`));

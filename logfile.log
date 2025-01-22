@@ -1478,3 +1478,34 @@ Error: CastError: Cast to ObjectId failed for value "return" (type string) at pa
 Error: CastError: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows"
 2025-01-17T09:44:22.274Z [error]: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows":
 Error: CastError: Cast to ObjectId failed for value "return" (type string) at path "_id" for model "requestsborrows"
+2025-01-21T06:35:52.916Z [error]: Book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: Book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-21T10:02:36.771Z [error]: Book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: Book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-21T10:02:37.140Z [error]: Book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: Book validation failed: returnableBooks: Path `returnableBooks` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-21T10:29:10.448Z [error]: Book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+Stack Trace: ValidationError: Book validation failed: reservedNumber: Path `reservedNumber` (-1) is less than minimum allowed value (0).
+    at Document.invalidate (D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3318:32)
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\document.js:3079:17
+    at D:\OptimaGeeks\LMS\node_modules\mongoose\lib\schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-21T12:07:24.413Z [error]: unhandledRejection: session is not defined
+ReferenceError: session is not defined
+    at Socket.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/RequestApproveHandler.js:44:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Stack Trace: ReferenceError: session is not defined
+    at Socket.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/RequestApproveHandler.js:44:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
