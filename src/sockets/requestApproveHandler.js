@@ -1,8 +1,10 @@
 import mongoose from "mongoose";
 import RequestsBorrows from "../models/requestsBorrows.js";
 import User from "../models/user.js";
+import Notification from "../models/notification.js";
+import Book from "../models/book.js";
 
-export default (io, socket) => {
+export default (io, socket, users) => {
   socket.on("approve", async (data, callback) => {
     const session = await mongoose.startSession();
     session.startTransaction();
@@ -15,7 +17,7 @@ export default (io, socket) => {
           message: "The request with given Id was not found",
         });
 
-      if (request.isApproved === true)
+      if (request.isApproved)
         return callback({
           success: false,
           message: "This Request is Already Approved",
@@ -29,6 +31,21 @@ export default (io, socket) => {
           message: "The Related strudent was not found",
         });
 
+      const book = await Book.findById(request.book);
+      if (!book) return callback({ success: false, message: "Invalid Book" });
+
+      let notification = new Notification({
+        userId: request.user,
+        bookId: request.book,
+      });
+
+      await notification.save({ session });
+
+      notification = {
+        ...notification.toObject(),
+        message: `Your Request for ${book.name} has Approved`,
+      };
+
       request.isApproved = true;
       request = await request.save({ session });
 
@@ -38,7 +55,13 @@ export default (io, socket) => {
 
       await session.commitTransaction();
       session.endSession();
-      io.emit("approved", request);
+
+      if (users[request.user]) {
+        users[request.user].forEach((socketId) => {
+          io.to(socketId).emit("approved", { request, notification });
+        });
+      }
+
       callback({ success: true, message: "Request Apperoved Seccessfully" });
     } catch (error) {
       await session.abortTransaction();

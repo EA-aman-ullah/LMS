@@ -25,3 +25,5 @@ ReferenceError: session is not defined
 Stack Trace: ReferenceError: session is not defined
     at Socket.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/RequestApproveHandler.js:44:7)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-01-24T11:35:15.624Z [error]: unhandledRejection: Error in loading http://localhost:3000/temp/1737718514556-0.3157526194669773.jpeg - 403 Forbidden
+  No stack trace

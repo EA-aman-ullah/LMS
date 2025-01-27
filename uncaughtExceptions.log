@@ -842,3 +842,131 @@ Stack Trace: Error: FATAL ERROR: jwtPrivateKey is not defined
     at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
     at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2025-01-22T09:46:53.092Z [error]: uncaughtException: userId is not defined
+ReferenceError: userId is not defined
+    at Namespace.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/index.js:15:16)
+    at Namespace.emit (node:events:519:28)
+    at Namespace.emitReserved (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:276:14)
+    at D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:238:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+Stack Trace: ReferenceError: userId is not defined
+    at Namespace.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/index.js:15:16)
+    at Namespace.emit (node:events:519:28)
+    at Namespace.emitReserved (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:276:14)
+    at D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:238:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-22T10:03:33.343Z [error]: uncaughtException: Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at Socket.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/index.js:29:34)
+    at Socket.emit (node:events:519:28)
+    at Socket.emitReserved (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Socket._onclose (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\socket.js:554:14)
+    at Client.onclose (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\client.js:247:20)
+    at Socket.emit (node:events:531:35)
+    at Socket.onClose (D:\OptimaGeeks\LMS\node_modules\engine.io\build\socket.js:320:18)
+    at Object.onceWrapper (node:events:633:28)
+    at WebSocket.emit (node:events:519:28)
+    at WebSocket.onClose (D:\OptimaGeeks\LMS\node_modules\engine.io\build\transport.js:114:14)
+Stack Trace: TypeError: Cannot read properties of undefined (reading 'length')
+    at Socket.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/index.js:29:34)
+    at Socket.emit (node:events:519:28)
+    at Socket.emitReserved (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Socket._onclose (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\socket.js:554:14)
+    at Client.onclose (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\client.js:247:20)
+    at Socket.emit (node:events:531:35)
+    at Socket.onClose (D:\OptimaGeeks\LMS\node_modules\engine.io\build\socket.js:320:18)
+    at Object.onceWrapper (node:events:633:28)
+    at WebSocket.emit (node:events:519:28)
+    at WebSocket.onClose (D:\OptimaGeeks\LMS\node_modules\engine.io\build\transport.js:114:14)
+2025-01-23T09:31:28.518Z [error]: uncaughtException: Cannot read properties of undefined (reading 'role')
+TypeError: Cannot read properties of undefined (reading 'role')
+    at Namespace.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/index.js:15:21)
+    at Namespace.emit (node:events:519:28)
+    at Namespace.emitReserved (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:276:14)
+    at D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:238:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+Stack Trace: TypeError: Cannot read properties of undefined (reading 'role')
+    at Namespace.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/index.js:15:21)
+    at Namespace.emit (node:events:519:28)
+    at Namespace.emitReserved (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:276:14)
+    at D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:238:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-23T09:32:59.119Z [error]: uncaughtException: Cannot read properties of undefined (reading 'role')
+TypeError: Cannot read properties of undefined (reading 'role')
+    at Namespace.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/index.js:15:21)
+    at Namespace.emit (node:events:519:28)
+    at Namespace.emitReserved (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:276:14)
+    at D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:238:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+Stack Trace: TypeError: Cannot read properties of undefined (reading 'role')
+    at Namespace.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/index.js:15:21)
+    at Namespace.emit (node:events:519:28)
+    at Namespace.emitReserved (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\typed-events.js:56:22)
+    at Namespace._doConnect (D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:276:14)
+    at D:\OptimaGeeks\LMS\node_modules\socket.io\dist\namespace.js:238:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2025-01-24T10:50:06.783Z [error]: uncaughtException: req is not defined
+ReferenceError: req is not defined
+    at file:///D:/OptimaGeeks/LMS/src/routes/books.js:31:43
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: ReferenceError: req is not defined
+    at file:///D:/OptimaGeeks/LMS/src/routes/books.js:31:43
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2025-01-24T10:50:51.392Z [error]: uncaughtException: Cannot read properties of undefined (reading 'transfer-encoding')
+TypeError: Cannot read properties of undefined (reading 'transfer-encoding')
+    at hasbody (D:\OptimaGeeks\LMS\node_modules\type-is\index.js:93:21)
+    at typeofrequest (D:\OptimaGeeks\LMS\node_modules\type-is\index.js:127:8)
+    at multerMiddleware (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:13:10)
+    at file:///D:/OptimaGeeks/LMS/src/routes/books.js:34:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: Cannot read properties of undefined (reading 'transfer-encoding')
+    at hasbody (D:\OptimaGeeks\LMS\node_modules\type-is\index.js:93:21)
+    at typeofrequest (D:\OptimaGeeks\LMS\node_modules\type-is\index.js:127:8)
+    at multerMiddleware (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:13:10)
+    at file:///D:/OptimaGeeks/LMS/src/routes/books.js:34:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2025-01-24T10:51:09.669Z [error]: uncaughtException: upload is not a function
+TypeError: upload is not a function
+    at file:///D:/OptimaGeeks/LMS/src/routes/books.js:34:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+Stack Trace: TypeError: upload is not a function
+    at file:///D:/OptimaGeeks/LMS/src/routes/books.js:34:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:234:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:473:24)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:123:5)
+2025-01-24T11:36:56.726Z [error]: uncaughtException: file is not defined
+ReferenceError: file is not defined
+    at file:///D:/OptimaGeeks/LMS/src/middleware/multerCofing.js:73:17
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+    at node:internal/streams/writable:934:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+Stack Trace: ReferenceError: file is not defined
+    at file:///D:/OptimaGeeks/LMS/src/middleware/multerCofing.js:73:17
+    at done (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:49:68)
+    at D:\OptimaGeeks\LMS\node_modules\multer\lib\make-middleware.js:155:11
+    at WriteStream.<anonymous> (D:\OptimaGeeks\LMS\node_modules\multer\storage\disk.js:43:9)
+    at WriteStream.emit (node:events:531:35)
+    at finish (node:internal/streams/writable:953:10)
+    at node:internal/streams/writable:934:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)

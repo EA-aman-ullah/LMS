@@ -2,14 +2,14 @@ import mongoose from "mongoose";
 import RequestsBorrows from "../models/requestsBorrows.js";
 import Book from "../models/book.js";
 import User from "../models/user.js";
+import Notification from "../models/notification.js";
 
-export default (io, socket) => {
+export default (io, socket, users) => {
   socket.on("assign", async (data, callback) => {
     const session = await mongoose.startSession();
     session.startTransaction();
 
     try {
-      console.log(data);
       let request = await RequestsBorrows.findById(data.requestId);
       if (!request)
         return callback({
@@ -17,13 +17,31 @@ export default (io, socket) => {
           message: "The Request with the given id was not found",
         });
 
+      if (request.isAssigned)
+        return callback({
+          success: false,
+          message: "The Request is Already Assigned !",
+        });
+
       const book = await Book.findById(request.book);
-      const student = await User.findById(socket.user._id);
+      const student = await User.findById(request.user);
       if (!book || !student)
         return callback({
           success: false,
           message: "Related Student or Book was not found",
         });
+
+      let notification = new Notification({
+        userId: request.user,
+        bookId: request.book,
+      });
+
+      await notification.save({ session });
+
+      notification = {
+        ...notification.toObject(),
+        message: `The Book ${book.name} has Assigned to you`,
+      };
 
       request.isAssigned = true;
       request.dateAssign = Date.now();
@@ -43,7 +61,13 @@ export default (io, socket) => {
 
       await session.commitTransaction();
       session.endSession();
-      io.emit("assigned", request);
+
+      if (users[request.user]) {
+        users[request.user].forEach((socketId) => {
+          io.to(socketId).emit("assigned", { request, notification });
+        });
+      }
+
       callback({ success: true, message: "Book Assigned Seccessfully" });
     } catch (error) {
       await session.abortTransaction();

@@ -3,8 +3,9 @@ import { validateRequestBorrow } from "../models/requestsBorrows.js";
 import User from "../models/user.js";
 import Book from "../models/book.js";
 import mongoose from "mongoose";
+import Notification from "../models/notification.js";
 
-export default (io, socket) => {
+export default (io, socket, users) => {
   socket.on("createRequest", async (data, callback) => {
     const session = await mongoose.startSession();
     session.startTransaction();
@@ -24,27 +25,23 @@ export default (io, socket) => {
       if (book.numberInStock === 0)
         return callback({ success: false, message: "Book Not in stock" });
 
-      const request = await RequestsBorrows.find(
-        {
-          user: socket.user._id,
-          book: data.bookId,
-        },
-        { _id: 0, isApproved: 1, isReturned: 1 }
-      );
-      let noRequestPending = request.every((el) => {
-        return el.isApproved === true && el.isReturned === true;
+      const requestExist = await RequestsBorrows.find({
+        user: socket.user._id,
+        book: data.bookId,
+        isReturned: false,
       });
 
-      if (!noRequestPending)
+      if (requestExist.length > 0)
         return callback({
           success: false,
-          message: "you are alread send request for this book",
+          message: "Please Follow The Privious Request Process Of This Book",
         });
 
       let borrowQuantity = await RequestsBorrows.countDocuments({
         user: socket.user._id,
         isReturned: false,
       });
+
       if (borrowQuantity > 5)
         return callback({ success: false, message: "Request Limit Exceeded" });
 
@@ -52,6 +49,18 @@ export default (io, socket) => {
         user: socket.user._id,
         book: data.bookId,
       });
+
+      let notification = new Notification({
+        userId: socket.user._id,
+        bookId: data.bookId,
+      });
+
+      notification = await notification.save({ session });
+
+      notification = {
+        ...notification.toObject(),
+        message: `New Request for ${book.name} by ${student.name}`,
+      };
 
       newRequest = await newRequest.save({ session });
 
@@ -65,7 +74,11 @@ export default (io, socket) => {
       await session.commitTransaction();
       session.endSession();
 
-      io.emit("request", newRequest);
+      if (users["admin"]) {
+        users["admin"].forEach((socketId) => {
+          io.to(socketId).emit("request", { newRequest, notification });
+        });
+      }
       callback({ success: true, message: "Request Created Seccessfully" });
     } catch (error) {
       await session.abortTransaction();

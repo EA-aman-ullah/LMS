@@ -1509,3 +1509,23 @@ ReferenceError: session is not defined
 Stack Trace: ReferenceError: session is not defined
     at Socket.<anonymous> (file:///D:/OptimaGeeks/LMS/src/sockets/RequestApproveHandler.js:44:7)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-01-24T10:14:06.121Z [error]: upload is not a function:
+Error: TypeError: upload is not a function
+2025-01-24T10:17:46.814Z [error]: Cannot read properties of undefined (reading 'transfer-encoding'):
+Error: TypeError: Cannot read properties of undefined (reading 'transfer-encoding')
+2025-01-24T10:18:50.169Z [error]: Cannot read properties of undefined (reading 'transfer-encoding'):
+Error: TypeError: Cannot read properties of undefined (reading 'transfer-encoding')
+2025-01-24T10:18:57.251Z [error]: Cannot read properties of undefined (reading 'transfer-encoding'):
+Error: TypeError: Cannot read properties of undefined (reading 'transfer-encoding')
+2025-01-24T10:20:37.585Z [error]: Cannot read properties of undefined (reading 'transfer-encoding'):
+Error: TypeError: Cannot read properties of undefined (reading 'transfer-encoding')
+2025-01-24T10:20:47.651Z [error]: Cannot read properties of undefined (reading 'transfer-encoding'):
+Error: TypeError: Cannot read properties of undefined (reading 'transfer-encoding')
+2025-01-24T10:46:55.824Z [error]: upload is not a function:
+Error: TypeError: upload is not a function
+2025-01-24T10:46:55.844Z [error]: upload is not a function:
+Error: TypeError: upload is not a function
+2025-01-24T10:46:55.855Z [error]: upload is not a function:
+Error: TypeError: upload is not a function
+2025-01-24T11:35:15.624Z [error]: unhandledRejection: Error in loading http://localhost:3000/temp/1737718514556-0.3157526194669773.jpeg - 403 Forbidden
+  No stack trace

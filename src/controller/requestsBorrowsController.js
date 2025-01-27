@@ -236,18 +236,12 @@ export async function createRequest(req) {
   if (book.numberInStock === 0)
     return { status: 400, body: "Book not in Stock" };
 
-  const request = await RequestsBorrows.find(
-    {
-      user: req.user._id,
-      book: req.body.bookId,
-    },
-    { _id: 0, isApproved: 1, isReturned: 1 }
-  );
-  let noRequestPending = request.every((el) => {
-    return el.isApproved === true && el.isReturned === true;
+  const requestExist = await RequestsBorrows.findOne({
+    user: req.user._id,
+    book: req.body.bookId,
+    isReturned: false,
   });
-
-  if (!noRequestPending)
+  if (requestExist)
     return { status: 422, body: "You are Already send Request for this book" };
 
   let borrowQuantity = await RequestsBorrows.countDocuments({
@@ -257,7 +251,7 @@ export async function createRequest(req) {
   if (borrowQuantity > 5)
     return { status: 400, body: "The limit has been completed" };
 
-  let requestBorrowBook = new RequestsBorrows({
+  let newRequest = new RequestsBorrows({
     user: req.user._id,
     book: req.body.bookId,
   });
@@ -265,7 +259,7 @@ export async function createRequest(req) {
   const session = await mongoose.startSession();
   session.startTransaction();
   try {
-    requestBorrowBook = await requestBorrowBook.save({ session });
+    newRequest = await newRequest.save({ session });
 
     student.requestPending++;
     await student.save({ session });
@@ -277,7 +271,7 @@ export async function createRequest(req) {
     await session.commitTransaction();
     session.endSession();
 
-    return { status: 201, body: requestBorrowBook };
+    return { status: 201, body: newRequest };
   } catch (error) {
     await session.abortTransaction();
     session.endSession();
@@ -287,14 +281,14 @@ export async function createRequest(req) {
 }
 
 export async function updeteRequest(id) {
-  const requestBorrow = await RequestsBorrows.findById(id);
-  if (!requestBorrow)
+  const request = await RequestsBorrows.findById(id);
+  if (!request)
     return { status: 404, body: "The request with given Id was not found" };
 
-  if (requestBorrow.isApproved === true)
+  if (request.isApproved)
     return { status: 400, body: "This request is already approved" };
 
-  const student = await User.findById(requestBorrow.user);
+  const student = await User.findById(request.user);
 
   if (!student)
     return {
@@ -306,8 +300,8 @@ export async function updeteRequest(id) {
   session.startTransaction();
 
   try {
-    requestBorrow.isApproved = true;
-    let result = await requestBorrow.save({ session });
+    request.isApproved = true;
+    let result = await request.save({ session });
 
     student.requestPending--;
     student.requestApproved++;
@@ -328,6 +322,9 @@ export async function assignBorrow(id) {
   const request = await RequestsBorrows.findById(id);
   if (!request)
     return { status: 404, body: "The Borrow with given id was not found!" };
+
+  if (request.isAssigned)
+    return { status: 400, body: "The request is already assigned!" };
 
   const book = await Book.findById(request.book);
   const student = await User.findById(request.user);
@@ -369,24 +366,27 @@ export async function assignBorrow(id) {
 }
 
 export async function returnBorrow(req) {
-  const requestBorrows = await RequestsBorrows.findById(req.params.id);
+  const request = await RequestsBorrows.findById(req.params.id);
 
-  if (!requestBorrows)
+  if (!request)
     return { status: 404, body: "The Borrow Book with given id was not found" };
 
-  const student = await User.findById(requestBorrows.user);
+  if (request.isReturned)
+    return { status: 400, body: "The Book already returned!" };
+
+  const student = await User.findById(request.user);
   if (!student)
     return { status: 404, body: "The associated student was not found." };
 
-  const book = await Book.findById(requestBorrows.book);
+  const book = await Book.findById(request.book);
   if (!book) return { status: 404, body: "The associated book was not found." };
 
   const session = await mongoose.startSession();
   session.startTransaction();
 
   try {
-    requestBorrows.isReturned = true;
-    await requestBorrows.save({ session });
+    request.isReturned = true;
+    await request.save({ session });
 
     student.returnableBooks--;
     await student.save({ session });
@@ -398,7 +398,7 @@ export async function returnBorrow(req) {
     await session.commitTransaction();
     session.endSession();
 
-    return { status: 200, body: requestBorrows };
+    return { status: 200, body: request };
   } catch (error) {
     await session.abortTransaction();
     session.endSession();
@@ -408,18 +408,18 @@ export async function returnBorrow(req) {
 }
 
 export async function deleteRequest(id) {
-  const deleteRequestBorrow = await RequestsBorrows.findById(id);
+  const request = await RequestsBorrows.findById(id);
 
-  if (!deleteRequestBorrow)
+  if (!request)
     return { status: 404, body: "The Request with given id was not found" };
 
-  if (deleteRequestBorrow.isApproved === true)
+  if (request.isApproved)
     return {
       status: 400,
       body: "this request is already approved you cannot decline it",
     };
 
-  let result = await deleteRequestBorrow.deleteOne({ new: true });
+  let result = await request.deleteOne({ new: true });
 
   return { status: 200, body: result };
 }

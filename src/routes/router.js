@@ -10,7 +10,7 @@ import dashboard from "./dasboard.js";
 export default function (app) {
   app.use(
     cors({
-      origin: process.env.ORIGIN,
+      origin: [process.env.ORIGIN_LOCALHOST, process.env.ORIGIN_VERCEL],
       allowedHeaders: ["Authorization", "Content-Type"],
       exposedHeaders: ["Authorization"],
     })

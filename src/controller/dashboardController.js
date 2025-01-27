@@ -5,65 +5,89 @@ import User from "../models/user.js";
 export async function getOverview(req) {
   const Overview = [];
 
-  let books = await Book.countDocuments({ numberInStock: { $gt: 0 } });
+  const queries = [
+    Book.countDocuments({ numberInStock: { $gt: 0 } }),
+
+    req.user.role !== "student"
+      ? RequestsBorrows.countDocuments({ isApproved: false })
+      : RequestsBorrows.countDocuments({
+          user: req.user._id,
+          isApproved: false,
+        }),
+
+    req.user.role !== "student"
+      ? RequestsBorrows.countDocuments({
+          isApproved: true,
+          isAssigned: false,
+        })
+      : RequestsBorrows.countDocuments({
+          user: req.user._id,
+          isApproved: true,
+          isAssigned: false,
+        }),
+
+    req.user.role !== "student"
+      ? RequestsBorrows.countDocuments({
+          isAssigned: true,
+          isReturned: false,
+        })
+      : RequestsBorrows.countDocuments({
+          user: req.user._id,
+          isAssigned: true,
+          isReturned: false,
+        }),
+
+    (req.user.role === "admin" || req.user.role === "librarian") &&
+      User.countDocuments({
+        role: "student",
+        requestPending: { $gt: 0 },
+      }),
+
+    (req.user.role === "admin" || req.user.role === "librarian") &&
+      User.countDocuments({
+        role: "student",
+        returnableBooks: { $gt: 0 },
+      }),
+  ];
+
+  const [
+    books,
+    unapprovedRequests,
+    approvedRequests,
+    borrowedBooks,
+    studentsWithPendingRequests,
+    studentsWithBooksToReturn,
+  ] = await Promise.all(queries);
+
   Overview.push({
     title: "Books Available in Library",
     value: books,
   });
 
-  if (req.user.role !== "student") {
-    let requestBorrows = await RequestsBorrows.countDocuments({
-      isApproved: false,
-    });
-    Overview.push({
-      title: "Unapproved Borrow Requests",
-      value: requestBorrows,
-    });
-  } else {
-    let requestBorrows = await RequestsBorrows.countDocuments({
-      "student._id": req.user._id,
-      isApproved: false,
-    });
-    Overview.push({
-      title: "Unapproved Borrow Requests",
-      value: requestBorrows,
-    });
-  }
+  Overview.push({
+    title: "Unapproved Book Requests",
+    value: unapprovedRequests,
+  });
 
-  if (req.user.role !== "student") {
-    let borrowBooks = await RequestsBorrows.countDocuments({
-      isApproved: true,
-      isReturned: false,
-    });
-    Overview.push({ title: "Active Borrowed Books", value: borrowBooks });
-  } else {
-    let borrowBooks = await RequestsBorrows.countDocuments({
-      "student._id": req.user._id,
-      isApproved: true,
-      isReturned: false,
-    });
-    Overview.push({ title: "Active Borrowed Books", value: borrowBooks });
-  }
+  Overview.push({
+    title: "Approved Book Requests",
+    value: approvedRequests,
+  });
+
+  Overview.push({
+    title: "Borrowed Books",
+    value: borrowedBooks,
+  });
 
   if (req.user.role === "admin" || req.user.role === "librarian") {
-    let studentsWhoRequested = await User.countDocuments({
-      role: "student",
-      requestBorrows: { $gt: 0 },
-    });
     Overview.push({
       title: "Students with Pending Requests",
-      value: studentsWhoRequested,
+      value: studentsWithPendingRequests,
     });
-  }
 
-  if (req.user.role === "admin" || req.user.role === "librarian") {
-    let studentsWhoGetBorrow = await User.countDocuments({
-      role: "student",
-      returnableBooks: { $gt: 0 },
-    });
     Overview.push({
       title: "Students with Books to Return",
-      value: studentsWhoGetBorrow,
+      value: studentsWithBooksToReturn,
     });
   }
 
